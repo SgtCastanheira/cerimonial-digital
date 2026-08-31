@@ -32,7 +32,6 @@ export class App {
 
   protected readonly navItems: NavItem[] = [
     { path: '/', icon: 'favorite', label: 'Início' },
-    { path: '/ao-vivo', icon: 'play_circle', label: 'Cerimônia ao vivo' },
     { path: '/cerimonialista', icon: 'record_voice_over', label: 'Cerimonialista' },
     { path: '/musicos', icon: 'piano', label: 'Músicos' },
     { path: '/roteiro', icon: 'menu_book', label: 'Roteiro completo' },
