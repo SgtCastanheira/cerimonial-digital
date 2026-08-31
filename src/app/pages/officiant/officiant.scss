@@ -1,0 +1,172 @@
+.officiant-topbar {
+  background: var(--ink);
+  padding: 14px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.progress-track {
+  height: 5px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+  transition: width 0.3s ease;
+}
+
+.page-step {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.officiant-page {
+  padding-top: 16px;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel {
+  margin-bottom: 12px;
+  border-radius: 14px !important;
+  transition: opacity 0.2s ease;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel.is-current {
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+::ng-deep .officiant-page .mat-expansion-panel.is-done {
+  opacity: 0.5;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel.is-saida {
+  background: var(--saida-bg, #f1ecff);
+  border-left: 4px solid var(--saida-accent, #7c5cd6) !important;
+}
+
+.saida-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: var(--saida-accent, #7c5cd6);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel.is-done .mat-expansion-panel-header-title {
+  text-decoration: line-through;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel-header {
+  height: auto !important;
+  min-height: 64px;
+  padding: 12px 16px;
+}
+
+::ng-deep .officiant-page .mat-content {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel-header-title {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center;
+  gap: 8px;
+  white-space: normal !important;
+  order: 1;
+}
+
+::ng-deep .officiant-page .mat-expansion-panel-header-description {
+  white-space: normal !important;
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  order: 2;
+}
+
+.checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+
+.step-order {
+  color: var(--gold);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.step-body {
+  padding-top: 4px;
+}
+
+.line {
+  margin: 4px 0;
+  font-size: 0.88rem;
+}
+
+.cue-line {
+  color: var(--gold);
+}
+
+.plaquinha-line {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.participants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 4px 14px;
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    font-size: 0.88rem;
+    padding: 2px 8px;
+    background: var(--surface-soft, rgba(0, 0, 0, 0.03));
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.15s ease;
+
+    &.is-marked {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+}
+
+.phase-block {
+  margin: 8px 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--gold-soft);
+}
+
+.phase-desc {
+  color: var(--ink-soft);
+}
+
+.speech-block {
+  background: #fff8ea;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 8px 0;
+}
+
+.speech {
+  white-space: pre-line;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 6px 0 0;
+}

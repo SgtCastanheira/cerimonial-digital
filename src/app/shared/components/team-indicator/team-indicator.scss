@@ -1,0 +1,61 @@
+.team-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.team-title {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8477;
+  font-weight: 600;
+}
+
+.team-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-row {
+  display: grid;
+  grid-template-columns: 12px 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c9c4b6;
+}
+
+.dot-active {
+  background: #3fae5c;
+  box-shadow: 0 0 0 3px rgba(63, 174, 92, 0.18);
+}
+
+.dot-wait {
+  background: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 161, 90, 0.2);
+}
+
+.team-name {
+  font-weight: 600;
+}
+
+.team-role {
+  color: #8a8477;
+}
+
+.team-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+}

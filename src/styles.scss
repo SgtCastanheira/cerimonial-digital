@@ -1,0 +1,169 @@
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme((
+    color: (
+      primary: mat.$blue-palette,
+      tertiary: mat.$azure-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+:root {
+  --gold: #c9a15a;
+  --gold-soft: #e6d3a8;
+  --ink: #12141a;
+  --ink-soft: #2a2d36;
+  --paper: #ffffff;
+  --paper-dim: #f6f5f2;
+  --line: #e5e2da;
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Inter', 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color-scheme: light;
+  background-color: var(--paper-dim);
+  color: var(--ink);
+  font: var(--mat-sys-body-medium);
+  font-family: var(--font-body);
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.container-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px 16px 96px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-soft);
+  border-radius: 4px;
+}
+
+// Utilitários compartilhados entre páginas
+.page-title {
+  font-size: 1.9rem;
+  margin: 8px 0 0;
+}
+
+.page-step {
+  color: #8a8477;
+  font-weight: 600;
+  margin: 2px 0 20px;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8477;
+  font-weight: 700;
+}
+
+.info-card,
+.speech-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.speech-card {
+  background: #fff8ea;
+  border-color: var(--gold-soft);
+}
+
+.speech-text {
+  white-space: pre-line;
+  line-height: 1.6;
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.info-value {
+  margin: 4px 0 0;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.action-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.action-bar-prev {
+  flex: 0 0 56px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.35;
+  }
+}
+
+.next-big {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background: var(--ink);
+  color: #fff;
+  padding: 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+
+  mat-icon {
+    color: var(--gold-soft);
+  }
+}

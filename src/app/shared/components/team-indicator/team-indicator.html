@@ -1,0 +1,13 @@
+<div class="team-card">
+  <span class="team-title">Equipe</span>
+  <div class="team-list">
+    @for (row of rows(); track row.id) {
+      <div class="team-row">
+        <span class="dot" [class.dot-active]="row.status === 'ativo'" [class.dot-wait]="row.status === 'aguardando'"></span>
+        <span class="team-name">{{ row.name }}</span>
+        <span class="team-role">{{ row.role }}</span>
+        <span class="team-status">{{ row.statusLabel }}</span>
+      </div>
+    }
+  </div>
+</div>

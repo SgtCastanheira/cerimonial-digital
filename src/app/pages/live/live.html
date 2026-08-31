@@ -1,0 +1,117 @@
+<div class="live-header">
+  <span class="live-eyebrow">Cerimônia ao vivo</span>
+  <div class="progress-track">
+    <div class="progress-fill" [style.width.%]="state.progress()"></div>
+  </div>
+  <span class="progress-label">Etapa {{ state.currentIndex() + 1 }} de {{ state.steps.length }}</span>
+</div>
+
+<div class="container-page live-body">
+  <section class="stage-card" [class.is-saida]="state.currentStep().isSaida">
+    <span class="field-label">Etapa atual</span>
+    <h1 class="font-display stage-title">
+      {{ state.currentStep().title }}
+      @if (state.currentStep().isSaida) {
+        <span class="saida-badge">SAÍDA</span>
+      }
+    </h1>
+
+    @if (state.currentPhase(); as phase) {
+      <span class="field-label">Fase</span>
+      <p class="stage-phase">{{ phase.label }}</p>
+      <p class="stage-phase-desc">{{ phase.description }}</p>
+    }
+
+    @if (state.currentSong(); as song) {
+      <span class="field-label">Música</span>
+      <p class="stage-song">{{ song.title }}</p>
+
+      <span class="field-label">Tempo</span>
+      <p class="stage-time">{{ song.plannedTime }}</p>
+    } @else {
+      <span class="field-label">Momento</span>
+      <p class="stage-song">Sem música — momento de reverência</p>
+    }
+
+    @if (state.currentStep().participants) {
+      <span class="field-label">Participantes / quem entra</span>
+      <p class="stage-participants">{{ state.currentStep().participants }}</p>
+    }
+
+    @if (state.currentStep().participantsList?.length) {
+      <ul class="participants-grid">
+        @for (p of state.currentStep().participantsList; track p) {
+          <li
+            [class.is-marked]="state.isParticipantMarked(state.currentStep().id, p)"
+            (click)="state.toggleParticipant(state.currentStep().id, p)"
+          >
+            {{ p }}
+          </li>
+        }
+      </ul>
+    }
+
+    @if (state.currentStep().plaquinha) {
+      <span class="field-label">Plaquinha (texto da placa)</span>
+      <p class="stage-plaquinha">{{ state.currentStep().plaquinha }}</p>
+    }
+
+    @if (state.hasNextPhase()) {
+      <div class="next-block">
+        <span class="field-label">Próxima fase (mesma etapa, sem cortar)</span>
+        <p class="stage-next">{{ state.nextSong()?.title }}</p>
+      </div>
+    } @else if (state.nextStep(); as next) {
+      <div class="next-block">
+        <span class="field-label">Próximo</span>
+        <p class="stage-next">{{ next.title }}</p>
+      </div>
+    }
+  </section>
+
+  @if (state.currentStep().speech?.length) {
+    @for (block of state.currentStep().speech; track block.title) {
+      <section class="speech-card">
+        <span class="field-label">{{ block.title }}</span>
+        <p class="speech-text">{{ block.text }}</p>
+      </section>
+    }
+  }
+
+  <app-team-indicator />
+
+  <section class="timer-card">
+    <span class="field-label">Cronômetro da etapa</span>
+    <span class="timer-display">{{ formatElapsed(state.elapsedSeconds()) }}</span>
+  </section>
+
+  <app-countdown />
+
+  <div class="music-actions">
+    <span class="music-actions-label">Controle de música</span>
+    <div class="music-actions-row">
+      <button class="music-btn start" (click)="startMusic()">
+        <mat-icon>play_circle</mat-icon>
+        Iniciar
+      </button>
+      <button class="music-btn cut" (click)="cutMusic()">
+        <mat-icon>content_cut</mat-icon>
+        Cortar
+      </button>
+    </div>
+
+    @if (state.currentSong(); as song) {
+      <app-youtube-player [url]="song.youtubeUrl" [title]="song.title" [showIdleControls]="false" />
+    }
+  </div>
+</div>
+
+<div class="action-bar">
+  <button class="action-bar-prev" (click)="state.previousStepAction()" [disabled]="state.currentIndex() === 0" aria-label="Etapa anterior">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <app-hold-button
+    [label]="state.hasNextPhase() ? ('Avançar para ' + state.nextSong()?.title) : 'Próxima etapa'"
+    (confirmed)="state.advance()"
+  />
+</div>

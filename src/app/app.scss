@@ -1,0 +1,73 @@
+.shell {
+  height: 100%;
+}
+
+.topbar {
+  background: var(--ink);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .topbar-title {
+    margin-left: 8px;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
+
+.content {
+  min-height: calc(100% - 56px);
+  background: var(--paper-dim);
+}
+
+.drawer {
+  width: 280px;
+  background: var(--ink);
+  color: #fff;
+
+  .drawer-header {
+    padding: 28px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 8px;
+  }
+
+  .drawer-title {
+    font-size: 1.6rem;
+    color: var(--gold-soft);
+  }
+
+  .drawer-sub {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-top: 4px;
+  }
+
+  ::ng-deep .mat-mdc-list-item {
+    color: #fff;
+  }
+
+  ::ng-deep .mat-mdc-list-item .mdc-list-item__primary-text {
+    color: #fff !important;
+  }
+
+  ::ng-deep .active-link {
+    background: rgba(201, 161, 90, 0.16);
+  }
+
+  ::ng-deep .active-link .mdc-list-item__primary-text {
+    color: var(--gold-soft) !important;
+  }
+
+  ::ng-deep mat-icon {
+    color: var(--gold-soft);
+  }
+}

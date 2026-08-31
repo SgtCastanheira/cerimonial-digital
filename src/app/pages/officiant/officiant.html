@@ -1,0 +1,79 @@
+<div class="officiant-topbar">
+  <div class="progress-track">
+    <div class="progress-fill" [style.width.%]="state.progress()"></div>
+  </div>
+  <p class="page-step">Etapa atual: {{ state.currentStep().title }} — vá ticando conforme for acontecendo</p>
+</div>
+
+<div class="container-page officiant-page">
+  <mat-accordion multi="true">
+    @for (step of steps; track step.id) {
+      <mat-expansion-panel
+        [id]="'officiant-' + step.id"
+        [expanded]="step.id === state.currentStep().id"
+        [class.is-done]="state.isStepCompleted(step.id)"
+        [class.is-current]="step.id === state.currentStep().id && !state.isStepCompleted(step.id)"
+        [class.is-saida]="step.isSaida"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="checkbox-wrap" (click)="$event.stopPropagation()">
+              <mat-checkbox
+                [checked]="state.isStepCompleted(step.id)"
+                (change)="state.setStepCompletedAndSync(step.id, $event.checked)"
+                aria-label="Marcar etapa como feita"
+              />
+            </span>
+            <span class="step-order">{{ step.order.toString().padStart(2, '0') }}</span>
+            {{ step.title }}
+            @if (step.isSaida) {
+              <span class="saida-badge">SAÍDA</span>
+            }
+          </mat-panel-title>
+          @if (step.participants) {
+            <mat-panel-description>{{ step.participants }}</mat-panel-description>
+          }
+        </mat-expansion-panel-header>
+
+        <div class="step-body">
+          @if (step.participantsList?.length) {
+            <ul class="participants-grid">
+              @for (p of step.participantsList; track p) {
+                <li
+                  [class.is-marked]="state.isParticipantMarked(step.id, p)"
+                  (click)="state.toggleParticipant(step.id, p)"
+                >
+                  {{ p }}
+                </li>
+              }
+            </ul>
+          }
+
+          @if (step.plaquinha) {
+            <p class="line plaquinha-line"><strong>Plaquinha:</strong> {{ step.plaquinha }}</p>
+          }
+
+          @if (step.speech?.length) {
+            @for (block of step.speech; track block.title) {
+              <div class="speech-block">
+                <span class="field-label">{{ block.title }}</span>
+                <p class="speech">{{ block.text }}</p>
+              </div>
+            }
+          }
+
+          @if (step.phases?.length) {
+            @for (phase of step.phases; track phase.label) {
+              <div class="phase-block">
+                <p class="line"><strong>{{ phase.label }}:</strong> {{ songById(phase.songId)?.title }} ({{ songById(phase.songId)?.plannedTime }})</p>
+                <p class="line phase-desc">{{ phase.description }}</p>
+              </div>
+            }
+          } @else if (step.songId) {
+            <p class="line"><strong>Música:</strong> {{ songById(step.songId)?.title }} ({{ songById(step.songId)?.plannedTime }})</p>
+          }
+        </div>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>

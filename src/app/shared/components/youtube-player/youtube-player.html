@@ -1,0 +1,40 @@
+<div class="player-wrap">
+  @if (state() === 'idle' && showIdleControls) {
+    <div class="player-actions">
+      <button mat-flat-button color="primary" (click)="play()">
+        <mat-icon>play_arrow</mat-icon>
+        Reproduzir
+      </button>
+      <button mat-stroked-button (click)="openInYoutube()">
+        <mat-icon>open_in_new</mat-icon>
+        Abrir no YouTube
+      </button>
+    </div>
+  }
+
+  @if (state() === 'loading') {
+    <p class="loading-text">Carregando player…</p>
+  }
+
+  <div class="player-mount" [class.hidden]="state() === 'idle' || state() === 'blocked'">
+    <div #mount></div>
+  </div>
+
+  @if (state() === 'blocked') {
+    <div class="blocked-notice">
+      <mat-icon>info</mat-icon>
+      <p>Este vídeo não permite reprodução incorporada. Clique para abrir no YouTube.</p>
+      <button mat-flat-button color="primary" (click)="openInYoutube()">
+        <mat-icon>open_in_new</mat-icon>
+        Abrir no YouTube
+      </button>
+    </div>
+  }
+
+  @if (state() === 'playing') {
+    <button mat-stroked-button class="open-secondary" (click)="openInYoutube()">
+      <mat-icon>open_in_new</mat-icon>
+      Abrir no YouTube
+    </button>
+  }
+</div>

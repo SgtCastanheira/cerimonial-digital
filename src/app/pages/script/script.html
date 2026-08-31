@@ -1,0 +1,81 @@
+<div class="container-page">
+  <h1 class="font-display page-title">Roteiro Completo</h1>
+  <p class="page-step">Duração total prevista do cortejo: {{ duracaoTotal }}</p>
+
+  <div class="toolbar-row no-print">
+    <button mat-flat-button color="primary" (click)="print()">
+      <mat-icon>picture_as_pdf</mat-icon>
+      Exportar / Imprimir PDF
+    </button>
+  </div>
+
+  <div class="script-list">
+    @for (step of steps; track step.id) {
+      <section class="script-step" [class.is-done]="state.isStepCompleted(step.id)" [class.is-saida]="step.isSaida">
+        <header>
+          <mat-checkbox
+            class="no-print"
+            [checked]="state.isStepCompleted(step.id)"
+            (change)="state.toggleStepCompleted(step.id)"
+            aria-label="Marcar etapa como feita"
+          />
+          <span class="step-order">{{ step.order.toString().padStart(2, '0') }}</span>
+          <h2 class="font-display">{{ step.title }}</h2>
+          @if (step.isSaida) {
+            <span class="saida-badge">SAÍDA</span>
+          }
+        </header>
+
+        @if (step.participants) {
+          <p class="line"><strong>Participantes:</strong> {{ step.participants }}</p>
+        }
+
+        @if (step.participantsList?.length) {
+          <ul class="participants-grid" [class.no-label]="!step.participants">
+            @for (p of step.participantsList; track p) {
+              <li
+                [class.is-marked]="state.isParticipantMarked(step.id, p)"
+                (click)="state.toggleParticipant(step.id, p)"
+              >
+                {{ p }}
+              </li>
+            }
+          </ul>
+        }
+
+        @if (step.plaquinha) {
+          <p class="line plaquinha-line"><strong>Plaquinha (texto da placa):</strong> {{ step.plaquinha }}</p>
+        }
+
+        @if (step.phases?.length) {
+          @for (phase of step.phases; track phase.label) {
+            <div class="phase-block">
+              <p class="line"><strong>{{ phase.label }}:</strong> {{ songById(phase.songId)?.title }} ({{ songById(phase.songId)?.plannedTime }})</p>
+              <p class="line phase-desc">{{ phase.description }}</p>
+            </div>
+          }
+        } @else if (step.songId) {
+          <p class="line"><strong>Música:</strong> {{ songById(step.songId)?.title }} ({{ songById(step.songId)?.plannedTime }})</p>
+          <p class="line"><strong>Instrumentação:</strong> {{ songById(step.songId)?.instrumentation }}</p>
+        }
+
+        @if (step.speech?.length) {
+          @for (block of step.speech; track block.title) {
+            <div class="speech-block">
+              <p class="line"><strong>{{ block.title }}:</strong></p>
+              <p class="speech">{{ block.text }}</p>
+            </div>
+          }
+        }
+
+        @if (step.extra?.length) {
+          <ul class="extra-list">
+            @for (e of step.extra; track e) {
+              <li>{{ e }}</li>
+            }
+          </ul>
+        }
+      </section>
+    }
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="hero">
+  <span class="hero-eyebrow">Assembleia de Deus</span>
+  <h1 class="font-display hero-title">Valtemir Junior <span class="gold-text">&amp;</span> Thamara</h1>
+  <h2 class="font-display hero-subtitle">Cerimônia de Casamento</h2>
+  <p class="hero-tag">Cerimonial Digital</p>
+</div>
+
+<div class="container-page tiles">
+  @for (tile of tiles; track tile.path) {
+    <a
+      class="tile"
+      [routerLink]="tile.path"
+      matRipple
+      [matRippleColor]="'rgba(201,161,90,0.25)'"
+    >
+      <mat-icon>{{ tile.icon }}</mat-icon>
+      <span>{{ tile.label }}</span>
+    </a>
+  }
+</div>

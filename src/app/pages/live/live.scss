@@ -1,0 +1,249 @@
+.live-header {
+  background: var(--ink);
+  color: #fff;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.live-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.7rem;
+  color: var(--gold-soft);
+}
+
+.progress-track {
+  height: 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+  transition: width 0.3s ease;
+}
+
+.progress-label {
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
+.live-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 16px;
+  padding-bottom: 104px;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8477;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.field-label:first-child {
+  margin-top: 0;
+}
+
+.stage-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+
+  &.is-saida {
+    background: var(--saida-bg, #f1ecff);
+    border-color: var(--saida-accent, #7c5cd6);
+    border-left: 5px solid var(--saida-accent, #7c5cd6);
+  }
+}
+
+.stage-title {
+  font-size: 1.9rem;
+  margin: 4px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.saida-badge {
+  font-size: 0.6rem;
+  font-family: var(--font-body, inherit);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: var(--saida-accent, #7c5cd6);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+.stage-song {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2px 0 0;
+}
+
+.stage-time {
+  font-size: 1rem;
+  margin: 2px 0 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.stage-phase {
+  margin: 2px 0 0;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.stage-phase-desc {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.stage-participants {
+  margin: 2px 0 0;
+}
+
+.participants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 4px 12px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    font-size: 0.9rem;
+    padding: 3px 9px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.15s ease;
+
+    &.is-marked {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+}
+
+.stage-plaquinha {
+  margin: 2px 0 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.next-block {
+  border-top: 1px dashed var(--line);
+  margin-top: 14px;
+  padding-top: 10px;
+}
+
+.stage-next {
+  margin: 2px 0 0;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.cues-card {
+  background: #fff8ea;
+  border: 1px solid var(--gold-soft);
+  border-radius: 14px;
+  padding: 14px 18px;
+
+  ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+  }
+
+  li {
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+}
+
+.timer-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-display {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  color: var(--ink);
+}
+
+.music-actions {
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.music-actions-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8a8477;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.music-actions-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.music-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #fff;
+  cursor: pointer;
+
+  mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.music-btn.start {
+  background: #2f7d46;
+}
+
+.music-btn.cut {
+  background: #a3372f;
+}
+
+

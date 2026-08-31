@@ -1,0 +1,45 @@
+<mat-sidenav-container class="shell">
+  <mat-sidenav
+    #drawer
+    mode="over"
+    [opened]="menuOpen()"
+    (closedStart)="closeMenu()"
+    class="drawer"
+  >
+    <div class="drawer-header">
+      <span class="font-display drawer-title">Valtemir Junior &amp; Thamara</span>
+      <span class="drawer-sub">Cerimonial Digital</span>
+    </div>
+    <mat-nav-list>
+      @for (item of navItems; track item.path) {
+        <a
+          mat-list-item
+          [routerLink]="item.path"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+          (click)="closeMenu()"
+        >
+          <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+          <span matListItemTitle>{{ item.label }}</span>
+        </a>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar class="topbar">
+      <button mat-icon-button (click)="toggleMenu()" aria-label="Abrir menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button routerLink="/" aria-label="Voltar ao início">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span class="topbar-title font-display">Valtemir Junior &amp; Thamara</span>
+      <span class="spacer"></span>
+    </mat-toolbar>
+
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

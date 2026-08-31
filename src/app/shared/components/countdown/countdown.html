@@ -1,0 +1,14 @@
+@if (count() === null) {
+  <button mat-stroked-button (click)="start()">
+    <mat-icon>timer</mat-icon>
+    Preparar (contagem opcional)
+  </button>
+} @else {
+  <div class="countdown-display">
+    <span class="countdown-label">Próximo evento em</span>
+    <span class="countdown-number">{{ count() }}</span>
+    <button mat-icon-button (click)="stop()" aria-label="Cancelar contagem">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+}

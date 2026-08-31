@@ -1,0 +1,108 @@
+<div class="catalog">
+  <span class="field-label">Banco de músicas — {{ songs.length }} cadastradas</span>
+
+  <mat-accordion multi="false">
+    @for (song of songs; track song.id) {
+      <mat-expansion-panel [id]="'song-' + song.id" [expanded]="song.id === state.currentSong()?.id" [class.is-current]="song.id === state.currentSong()?.id">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="song-order">{{ song.order.toString().padStart(2, '0') }}</span>
+            {{ song.title }}
+            @if (song.id === state.currentSong()?.id) {
+              <span class="current-badge">ETAPA ATUAL</span>
+            }
+            <span class="song-usage">{{ stepBySongId[song.id]?.stepTitle ?? song.usage }}</span>
+          </mat-panel-title>
+          <mat-panel-description>{{ song.plannedTime }}</mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div class="song-detail">
+          @if (stepBySongId[song.id]?.participants; as participants) {
+            <p class="detail-line"><span class="field-label">Quem entra</span> {{ participants }}</p>
+          }
+          @if (stepBySongId[song.id]?.participantsList; as participantsList) {
+            <ul class="participants-grid">
+              @for (p of participantsList; track p) {
+                <li
+                  [class.is-marked]="state.isParticipantMarked(stepBySongId[song.id]!.stepId, p)"
+                  (click)="state.toggleParticipant(stepBySongId[song.id]!.stepId, p)"
+                >
+                  {{ p }}
+                </li>
+              }
+            </ul>
+          }
+          @if (song.artist) {
+            <p class="detail-line"><span class="field-label">Artista</span> {{ song.artist }}</p>
+          }
+          @if (song.videoTitle) {
+            <p class="detail-line"><span class="field-label">Vídeo</span> {{ song.videoTitle }}</p>
+          }
+          @if (song.structure) {
+            <p class="detail-line"><span class="field-label">Estrutura</span> {{ song.structure }}</p>
+          }
+          <p class="detail-line"><span class="field-label">Instrumentação</span> {{ song.instrumentation }}</p>
+
+          @if (song.notes?.length) {
+            <ul class="notes-list">
+              @for (n of song.notes; track n) {
+                <li>{{ n }}</li>
+              }
+            </ul>
+          }
+
+          @if (song.lyricsBySection?.length) {
+            <span class="field-label">Letra</span>
+            <div class="lyrics-block">
+              @for (part of song.lyricsBySection; track part.label) {
+                <div class="lyrics-part">
+                  <span class="lyrics-part-label">{{ part.label }}</span>
+                  <p class="lyrics-running">{{ part.text }}</p>
+                </div>
+              }
+            </div>
+          } @else if (song.lyrics) {
+            <span class="field-label">Letra</span>
+            <p class="lyrics-running">{{ song.lyrics }}</p>
+          }
+
+          <app-youtube-player [url]="song.youtubeUrl" [title]="song.title" />
+
+          @if (song.id === 'quao-lindo-esse-nome-e') {
+            <div class="couples-table">
+              <span class="field-label">Tempo individual de cada casal</span>
+              <table>
+                <thead>
+                  <tr><th>Casal</th><th>Entrada</th><th>Chegada</th></tr>
+                </thead>
+                <tbody>
+                  @for (name of padrinhosNames; track name) {
+                    <tr>
+                      <td>{{ name }}</td>
+                      <td>
+                        <input
+                          class="couple-input"
+                          placeholder="--:--"
+                          [ngModel]="state.getPadrinhoTime(name, 'entrada')"
+                          (ngModelChange)="state.setPadrinhoTime(name, 'entrada', $event)"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          class="couple-input"
+                          placeholder="--:--"
+                          [ngModel]="state.getPadrinhoTime(name, 'chegada')"
+                          (ngModelChange)="state.setPadrinhoTime(name, 'chegada', $event)"
+                        />
+                      </td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          }
+        </div>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>
