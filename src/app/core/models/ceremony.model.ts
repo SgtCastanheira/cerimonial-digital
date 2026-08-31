@@ -93,9 +93,9 @@ export const PADRINHOS_ORDEM_ENTRADA = [
   'Antônio Júnior & Lorrayne',
   'Wislaine & Matheus',
   'Marcel & Ana Maria',
-  'Maryane & Thiago',
+  'Maryane & Thyago',
   'Emerson & Fernanda',
-  'Aline & Jhonatan',
+  'Aline & Jhonathan',
   'Leonardo & Helena',
   'Laiza & Johnny',
 ];
