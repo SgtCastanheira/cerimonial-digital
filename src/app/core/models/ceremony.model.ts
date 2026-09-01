@@ -112,6 +112,11 @@ export const VENUE_STAFF: StaffMember[] = [
 
   { id: 'vinicius', name: 'Vinicius', role: 'Filmmaker', teamName: 'Fotografia', flatMembers: true, noChief: true },
   { id: 'lucilaine', name: 'Lucilaine', role: 'Fotógrafa', reportsToId: 'vinicius' },
+
+  { id: 'abner-staff', name: 'Abner', role: 'Violão', teamName: 'Músicos', flatMembers: true },
+  { id: 'carol-staff', name: 'Carol', role: 'Teclado', reportsToId: 'abner-staff' },
+  { id: 'david-staff', name: 'David', role: 'Violino', reportsToId: 'abner-staff' },
+  { id: 'fabiana-staff', name: 'Fabiana', role: 'Cantora', reportsToId: 'abner-staff' },
 ];
 
 // ---------------------------------------------------------------------------
