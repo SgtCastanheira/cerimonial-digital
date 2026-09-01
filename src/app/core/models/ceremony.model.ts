@@ -88,6 +88,8 @@ export interface StaffMember {
   reportsToId?: string;
   /** Nome da equipe/setor. Só é usado em quem está no topo da hierarquia (sem reportsToId) — vira o título da sanfona. */
   teamName?: string;
+  /** Só é usado em quem está no topo da hierarquia. Se true, os subordinados aparecem em lista simples ("Nome - Função") em vez de sanfona individual. */
+  flatMembers?: boolean;
 }
 
 export const VENUE_STAFF: StaffMember[] = [
@@ -101,7 +103,7 @@ export const VENUE_STAFF: StaffMember[] = [
   { id: 'gemeos-1', name: 'Lucas Gabriel', role: 'Garçom', phone: '(65) 9816-2923', waPhone: '556598162923', reportsToId: 'cleiton' },
   { id: 'gemeos-2', name: 'Luis Linhares', role: 'Garçom', phone: '(65) 9963-6768', waPhone: '556599636768', reportsToId: 'cleiton' },
 
-  { id: 'cinei', name: 'Cinei', role: 'Cerimonialista - Roteirista', teamName: 'Cerimonialista' },
+  { id: 'cinei', name: 'Cinei', role: 'Cerimonialista - Roteirista', teamName: 'Cerimonialista', flatMembers: true },
   { id: 'anderson', name: 'Anderson', role: 'Locutor', reportsToId: 'cinei' },
   { id: 'quessio', name: 'Quessio', role: 'Auxiliar', reportsToId: 'cinei' },
   { id: 'seguranca-bolo', name: 'A definir', role: 'Fiscal', reportsToId: 'cinei' },
