@@ -93,7 +93,7 @@ export interface StaffMember {
 }
 
 export const VENUE_STAFF: StaffMember[] = [
-  { id: 'cleiton', name: 'Cleiton', role: 'Comanda os garçons', phone: '(65) 9.8151-0220', waPhone: '5565981510220', teamName: 'Garçom' },
+  { id: 'cleiton', name: 'Cleiton', role: 'Comanda os garçons', phone: '(65) 9.8151-0220', waPhone: '5565981510220', teamName: 'Garçom', flatMembers: true },
   { id: 'walter', name: 'Walter', role: 'Garçom', phone: '(65) 9.9675-0511', waPhone: '5565996750511', reportsToId: 'cleiton' },
   { id: 'alison', name: 'Alison', role: 'Garçom', phone: '(65) 9.9306-2863', waPhone: '5565993062863', reportsToId: 'cleiton' },
   { id: 'bordin', name: 'Bordin', role: 'Garçom', phone: '(65) 9.9236-0215', waPhone: '5565992360215', reportsToId: 'cleiton' },
