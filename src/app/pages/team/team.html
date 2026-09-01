@@ -1,13 +1,13 @@
 <div class="container-page">
   <h1 class="font-display page-title">Equipe do Local</h1>
-  <p class="page-sub">Quem faz o quê no dia e a quem responde. Toque no ícone para chamar no WhatsApp.</p>
+  <p class="page-sub">Quem faz o quê no dia e a quem responde. Toque no nome para chamar no WhatsApp.</p>
 
   <mat-accordion class="team-accordion" multi="false">
     @for (team of teams; track team.leader.id) {
       <mat-expansion-panel class="team-panel">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            {{ team.leader.teamName || team.leader.role }}
+            {{ panelTitle(team) }}
           </mat-panel-title>
           <mat-panel-description>
             <span class="headcount-badge">
@@ -20,7 +20,7 @@
         <div class="member leader-row">
           <div class="member-info">
             <span class="member-name">{{ team.leader.name }}</span>
-            <span class="member-role">{{ team.leader.role }}</span>
+            <span class="member-role">Chefe da equipe</span>
           </div>
           @if (team.leader.waPhone) {
             <a
@@ -36,27 +36,32 @@
         </div>
 
         @if (team.members.length) {
-          <ul class="subordinates">
+          <mat-accordion class="members-accordion" multi="true">
             @for (member of team.members; track member.id) {
-              <li class="member">
-                <div class="member-info">
-                  <span class="member-name">{{ member.name }}</span>
-                  <span class="member-role">{{ member.role }}</span>
+              <mat-expansion-panel class="member-panel">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>{{ member.name }}</mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <div class="member">
+                  <div class="member-info">
+                    <span class="member-role">{{ member.role }}</span>
+                  </div>
+                  @if (member.waPhone) {
+                    <a
+                      class="wa-btn"
+                      [href]="waLink(member.waPhone)"
+                      target="_blank"
+                      rel="noopener"
+                      [attr.aria-label]="'Chamar ' + member.name + ' no WhatsApp'"
+                    >
+                      <mat-icon>chat</mat-icon>
+                    </a>
+                  }
                 </div>
-                @if (member.waPhone) {
-                  <a
-                    class="wa-btn"
-                    [href]="waLink(member.waPhone)"
-                    target="_blank"
-                    rel="noopener"
-                    [attr.aria-label]="'Chamar ' + member.name + ' no WhatsApp'"
-                  >
-                    <mat-icon>chat</mat-icon>
-                  </a>
-                }
-              </li>
+              </mat-expansion-panel>
             }
-          </ul>
+          </mat-accordion>
         }
       </mat-expansion-panel>
     }

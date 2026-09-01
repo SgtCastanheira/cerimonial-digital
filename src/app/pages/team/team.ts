@@ -21,6 +21,10 @@ export class Team {
     return { leader, members, headcount: members.length + 1 };
   });
 
+  protected panelTitle(team: StaffTeam): string {
+    return `${team.leader.teamName || team.leader.role} - Chefe ${team.leader.name}`;
+  }
+
   protected waLink(phone: string): string {
     return `https://wa.me/${phone}`;
   }
