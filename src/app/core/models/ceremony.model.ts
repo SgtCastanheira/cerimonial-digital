@@ -90,6 +90,8 @@ export interface StaffMember {
   teamName?: string;
   /** Só é usado em quem está no topo da hierarquia. Se true, os subordinados aparecem em lista simples ("Nome - Função") em vez de sanfona individual. */
   flatMembers?: boolean;
+  /** Só é usado em quem está no topo da hierarquia. Se true, a equipe não tem chefe — o título fica só o nome da equipe e esta pessoa aparece na lista como as demais, sem destaque. */
+  noChief?: boolean;
 }
 
 export const VENUE_STAFF: StaffMember[] = [
@@ -107,6 +109,9 @@ export const VENUE_STAFF: StaffMember[] = [
   { id: 'anderson', name: 'Anderson', role: 'Locutor', reportsToId: 'cinei' },
   { id: 'quessio', name: 'Quessio', role: 'Auxiliar', reportsToId: 'cinei' },
   { id: 'seguranca-bolo', name: 'A definir', role: 'Fiscal', reportsToId: 'cinei' },
+
+  { id: 'vinicius', name: 'Vinicius', role: 'Filmmaker', teamName: 'Fotografia', flatMembers: true, noChief: true },
+  { id: 'lucilaine', name: 'Lucilaine', role: 'Fotógrafa', reportsToId: 'vinicius' },
 ];
 
 // ---------------------------------------------------------------------------

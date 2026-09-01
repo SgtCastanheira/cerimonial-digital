@@ -14,7 +14,7 @@
               <mat-icon>groups</mat-icon>
               {{ team.headcount }}
             </span>
-            @if (team.leader.waPhone) {
+            @if (team.leader.waPhone && !team.leader.noChief) {
               <a
                 class="wa-btn wa-btn-sm"
                 [href]="waLink(team.leader.waPhone)"
@@ -29,10 +29,10 @@
           </mat-panel-description>
         </mat-expansion-panel-header>
 
-        @if (team.members.length) {
+        @if (team.displayMembers.length) {
           @if (team.leader.flatMembers) {
             <ul class="flat-list">
-              @for (member of team.members; track member.id) {
+              @for (member of team.displayMembers; track member.id) {
                 <li class="member">
                   <div class="member-info">
                     <span class="member-name">{{ member.name }} - {{ member.role }}</span>
@@ -53,7 +53,7 @@
             </ul>
           } @else {
             <mat-accordion class="members-accordion" multi="true">
-              @for (member of team.members; track member.id) {
+              @for (member of team.displayMembers; track member.id) {
                 <mat-expansion-panel class="member-panel">
                   <mat-expansion-panel-header>
                     <mat-panel-title>{{ member.name }}</mat-panel-title>
