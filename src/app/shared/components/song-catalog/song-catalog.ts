@@ -32,7 +32,7 @@ function buildStepBySongId(): Record<string, StepSongInfo> {
   styleUrl: './song-catalog.scss',
 })
 export class SongCatalog {
-  protected readonly songs = SONGS;
+  protected readonly songs = [...SONGS].sort((a, b) => a.order - b.order);
   protected readonly padrinhosNames = TODOS_PADRINHOS.map((c) => c.name);
   protected readonly state = inject(CeremonyStateService);
   protected readonly stepBySongId = buildStepBySongId();
