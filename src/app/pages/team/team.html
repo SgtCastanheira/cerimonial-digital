@@ -2,49 +2,63 @@
   <h1 class="font-display page-title">Equipe do Local</h1>
   <p class="page-sub">Quem faz o quê no dia e a quem responde. Toque no ícone para chamar no WhatsApp.</p>
 
-  @for (leader of leaders; track leader.id) {
-    <div class="team-group">
-      <div class="member leader-row">
-        <div class="member-info">
-          <span class="member-name">{{ leader.name }}</span>
-          <span class="member-role">{{ leader.role }}</span>
-        </div>
-        @if (leader.waPhone) {
-          <a
-            class="wa-btn"
-            [href]="waLink(leader.waPhone)"
-            target="_blank"
-            rel="noopener"
-            [attr.aria-label]="'Chamar ' + leader.name + ' no WhatsApp'"
-          >
-            <mat-icon>chat</mat-icon>
-          </a>
-        }
-      </div>
+  <mat-accordion class="team-accordion" multi="false">
+    @for (team of teams; track team.leader.id) {
+      <mat-expansion-panel class="team-panel">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ team.leader.teamName || team.leader.role }}
+          </mat-panel-title>
+          <mat-panel-description>
+            <span class="headcount-badge">
+              <mat-icon>groups</mat-icon>
+              {{ team.headcount }}
+            </span>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
 
-      @if (subordinatesOf(leader.id).length) {
-        <ul class="subordinates">
-          @for (member of subordinatesOf(leader.id); track member.id) {
-            <li class="member">
-              <div class="member-info">
-                <span class="member-name">{{ member.name }}</span>
-                <span class="member-role">{{ member.role }}</span>
-              </div>
-              @if (member.waPhone) {
-                <a
-                  class="wa-btn"
-                  [href]="waLink(member.waPhone)"
-                  target="_blank"
-                  rel="noopener"
-                  [attr.aria-label]="'Chamar ' + member.name + ' no WhatsApp'"
-                >
-                  <mat-icon>chat</mat-icon>
-                </a>
-              }
-            </li>
+        <div class="member leader-row">
+          <div class="member-info">
+            <span class="member-name">{{ team.leader.name }}</span>
+            <span class="member-role">{{ team.leader.role }}</span>
+          </div>
+          @if (team.leader.waPhone) {
+            <a
+              class="wa-btn"
+              [href]="waLink(team.leader.waPhone)"
+              target="_blank"
+              rel="noopener"
+              [attr.aria-label]="'Chamar ' + team.leader.name + ' no WhatsApp'"
+            >
+              <mat-icon>chat</mat-icon>
+            </a>
           }
-        </ul>
-      }
-    </div>
-  }
+        </div>
+
+        @if (team.members.length) {
+          <ul class="subordinates">
+            @for (member of team.members; track member.id) {
+              <li class="member">
+                <div class="member-info">
+                  <span class="member-name">{{ member.name }}</span>
+                  <span class="member-role">{{ member.role }}</span>
+                </div>
+                @if (member.waPhone) {
+                  <a
+                    class="wa-btn"
+                    [href]="waLink(member.waPhone)"
+                    target="_blank"
+                    rel="noopener"
+                    [attr.aria-label]="'Chamar ' + member.name + ' no WhatsApp'"
+                  >
+                    <mat-icon>chat</mat-icon>
+                  </a>
+                }
+              </li>
+            }
+          </ul>
+        }
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
 </div>

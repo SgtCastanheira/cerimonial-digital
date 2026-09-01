@@ -4,12 +4,50 @@
   margin: 4px 0 20px;
 }
 
-.team-group {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  margin-bottom: 16px;
+.team-accordion {
+  display: block;
+}
+
+::ng-deep .team-panel {
+  margin-bottom: 12px;
+  border-radius: 14px !important;
   overflow: hidden;
+}
+
+::ng-deep .team-panel .mat-expansion-panel-header {
+  height: auto !important;
+  padding: 12px 16px;
+}
+
+::ng-deep .team-panel .mat-expansion-panel-header-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+::ng-deep .team-panel .mat-expansion-panel-header-description {
+  flex-grow: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headcount-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--gold-soft);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  padding: 3px 10px;
+
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .member {
@@ -17,18 +55,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 12px 16px;
+  padding: 10px 0;
 }
 
 .leader-row {
-  background: var(--ink);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 4px;
 
   .member-name {
-    color: var(--gold-soft);
-  }
-
-  .member-role {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--gold);
   }
 }
 
