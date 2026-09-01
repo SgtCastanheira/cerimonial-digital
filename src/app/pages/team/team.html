@@ -1,0 +1,50 @@
+<div class="container-page">
+  <h1 class="font-display page-title">Equipe do Local</h1>
+  <p class="page-sub">Quem faz o quê no dia e a quem responde. Toque no ícone para chamar no WhatsApp.</p>
+
+  @for (leader of leaders; track leader.id) {
+    <div class="team-group">
+      <div class="member leader-row">
+        <div class="member-info">
+          <span class="member-name">{{ leader.name }}</span>
+          <span class="member-role">{{ leader.role }}</span>
+        </div>
+        @if (leader.waPhone) {
+          <a
+            class="wa-btn"
+            [href]="waLink(leader.waPhone)"
+            target="_blank"
+            rel="noopener"
+            [attr.aria-label]="'Chamar ' + leader.name + ' no WhatsApp'"
+          >
+            <mat-icon>chat</mat-icon>
+          </a>
+        }
+      </div>
+
+      @if (subordinatesOf(leader.id).length) {
+        <ul class="subordinates">
+          @for (member of subordinatesOf(leader.id); track member.id) {
+            <li class="member">
+              <div class="member-info">
+                <span class="member-name">{{ member.name }}</span>
+                <span class="member-role">{{ member.role }}</span>
+              </div>
+              @if (member.waPhone) {
+                <a
+                  class="wa-btn"
+                  [href]="waLink(member.waPhone)"
+                  target="_blank"
+                  rel="noopener"
+                  [attr.aria-label]="'Chamar ' + member.name + ' no WhatsApp'"
+                >
+                  <mat-icon>chat</mat-icon>
+                </a>
+              }
+            </li>
+          }
+        </ul>
+      }
+    </div>
+  }
+</div>

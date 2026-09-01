@@ -21,5 +21,9 @@ export const routes: Routes = [
     path: 'roteiro',
     loadComponent: () => import('./pages/script/script').then((m) => m.Script),
   },
+  {
+    path: 'equipe',
+    loadComponent: () => import('./pages/team/team').then((m) => m.Team),
+  },
   { path: '**', redirectTo: '' },
 ];

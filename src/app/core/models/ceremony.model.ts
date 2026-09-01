@@ -73,6 +73,34 @@ export const TEAM: TeamMember[] = [
 ];
 
 // ---------------------------------------------------------------------------
+// EQUIPE DO LOCAL (staff de apoio no dia — buffet, garçons, etc.)
+// ---------------------------------------------------------------------------
+
+export interface StaffMember {
+  id: string;
+  name: string;
+  role: string;
+  /** Telefone formatado para exibição. */
+  phone?: string;
+  /** Telefone só com dígitos + código do país, para o link do WhatsApp (wa.me). */
+  waPhone?: string;
+  /** id de outro StaffMember a quem esta pessoa é subordinada. Ausente = topo da hierarquia. */
+  reportsToId?: string;
+}
+
+export const VENUE_STAFF: StaffMember[] = [
+  { id: 'cleiton', name: 'Cleiton', role: 'Comanda os garçons', phone: '(65) 9.8151-0220', waPhone: '5565981510220' },
+  { id: 'walter', name: 'Walter', role: 'Garçom', phone: '(65) 9.9675-0511', waPhone: '5565996750511', reportsToId: 'cleiton' },
+  { id: 'alison', name: 'Alison', role: 'Garçom', phone: '(65) 9.9306-2863', waPhone: '5565993062863', reportsToId: 'cleiton' },
+  { id: 'bordin', name: 'Bordin', role: 'Garçom', phone: '(65) 9.9236-0215', waPhone: '5565992360215', reportsToId: 'cleiton' },
+  { id: 'kaio', name: 'Kaio', role: 'Garçom', phone: '(65) 9.8414-5282', waPhone: '5565984145282', reportsToId: 'cleiton' },
+  { id: 'lucas', name: 'Lucas', role: 'Garçom', phone: '(65) 9.9226-3881', waPhone: '5565992263881', reportsToId: 'cleiton' },
+  { id: 'ruan', name: 'Ruan', role: 'Garçom', phone: '(65) 9.9323-4534', waPhone: '5565993234534', reportsToId: 'cleiton' },
+  { id: 'gemeos-1', name: 'Lucas Gabriel', role: 'Garçom', phone: '(65) 9816-2923', waPhone: '556598162923', reportsToId: 'cleiton' },
+  { id: 'gemeos-2', name: 'Luis Linhares', role: 'Garçom', phone: '(65) 9963-6768', waPhone: '556599636768', reportsToId: 'cleiton' },
+];
+
+// ---------------------------------------------------------------------------
 // PARTICIPANTES
 // ---------------------------------------------------------------------------
 
