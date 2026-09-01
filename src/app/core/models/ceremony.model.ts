@@ -104,7 +104,7 @@ export const VENUE_STAFF: StaffMember[] = [
   { id: 'cinei', name: 'Cinei', role: 'Cerimonialista - Roteirista', teamName: 'Cerimonialista' },
   { id: 'anderson', name: 'Anderson', role: 'Locutor', reportsToId: 'cinei' },
   { id: 'quessio', name: 'Quessio', role: 'Auxiliar', reportsToId: 'cinei' },
-  { id: 'seguranca-bolo', name: 'A definir', role: 'Segurança do bolo', reportsToId: 'cinei' },
+  { id: 'seguranca-bolo', name: 'A definir', role: 'Fiscal', reportsToId: 'cinei' },
 ];
 
 // ---------------------------------------------------------------------------
