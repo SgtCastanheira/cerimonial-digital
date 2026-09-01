@@ -30,6 +30,18 @@
   flex-grow: 0;
   justify-content: flex-end;
   align-items: center;
+  gap: 10px;
+}
+
+.wa-btn-sm {
+  width: 32px;
+  height: 32px;
+
+  mat-icon {
+    font-size: 17px;
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .headcount-badge {
@@ -56,15 +68,6 @@
   justify-content: space-between;
   gap: 12px;
   padding: 10px 0;
-}
-
-.leader-row {
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 4px;
-
-  .member-name {
-    color: var(--gold);
-  }
 }
 
 .member-info {

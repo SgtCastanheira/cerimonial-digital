@@ -14,26 +14,20 @@
               <mat-icon>groups</mat-icon>
               {{ team.headcount }}
             </span>
+            @if (team.leader.waPhone) {
+              <a
+                class="wa-btn wa-btn-sm"
+                [href]="waLink(team.leader.waPhone)"
+                target="_blank"
+                rel="noopener"
+                (click)="$event.stopPropagation()"
+                [attr.aria-label]="'Chamar ' + team.leader.name + ' no WhatsApp'"
+              >
+                <mat-icon>chat</mat-icon>
+              </a>
+            }
           </mat-panel-description>
         </mat-expansion-panel-header>
-
-        <div class="member leader-row">
-          <div class="member-info">
-            <span class="member-name">{{ team.leader.name }}</span>
-            <span class="member-role">Chefe da equipe</span>
-          </div>
-          @if (team.leader.waPhone) {
-            <a
-              class="wa-btn"
-              [href]="waLink(team.leader.waPhone)"
-              target="_blank"
-              rel="noopener"
-              [attr.aria-label]="'Chamar ' + team.leader.name + ' no WhatsApp'"
-            >
-              <mat-icon>chat</mat-icon>
-            </a>
-          }
-        </div>
 
         @if (team.members.length) {
           <mat-accordion class="members-accordion" multi="true">
