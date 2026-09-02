@@ -174,7 +174,7 @@ export class CeremonyStateService {
 
   readonly davidStatus = computed<TeamStatus>(() => {
     const id = this.currentStep().id;
-    return id === 'step-13' ? 'ativo' : id === 'step-12' ? 'aguardando' : 'inativo';
+    return id === 'step-12' ? 'ativo' : id === 'step-11' ? 'aguardando' : 'inativo';
   });
 
   readonly fabiaStatus = computed<TeamStatus>(() => {
