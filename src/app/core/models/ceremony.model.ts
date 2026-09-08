@@ -964,15 +964,15 @@ Recebamos com gratidão e reverência o Pastor Etevildo da Silveira e sua digní
     id: 'step-3',
     order: 3,
     title: 'Entrada da Bíblia',
-    participants: 'Bíblia levada pelas crianças — elas deixam a Bíblia no púlpito',
-    participantsList: ['Luna', 'Lira'],
+    participants: 'Bíblia levada pela criança — ela deixa a Bíblia no púlpito',
+    participantsList: ['Nayla'],
     songId: 'ale-a-gloria',
     speech: [
       {
         title: 'Entrada da Bíblia',
         text: `Leva-me em teu coração, guia-me com a Palavra. Luz para o nosso caminho. Onde o amor e a fé se encontram.
 
-Neste momento, recebemos com muito carinho Luna e Lira, trazendo a Bíblia Sagrada, a palavra que vai abençoar e guiar esta nova família.`,
+Neste momento, recebemos com muito carinho a criança Nayla, trazendo a Bíblia Sagrada, a palavra que vai abençoar e guiar esta nova família.`,
       },
     ],
   },
