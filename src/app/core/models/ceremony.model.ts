@@ -133,18 +133,18 @@ export const PASTORES = ['Ademir', 'Sandra', 'Etevildo da Silveira', 'Maria Luci
 
 /** Ordem real de entrada, intercalando um casal de cada lado (conforme roteiro). */
 export const PADRINHOS_ORDEM_ENTRADA = [
-  '1º — Admilson & Hellen',
-  '2º — Alcebiades & Bruna',
-  '3º — Aline & Jhonathan',
-  '4º — Antônio Júnior & Lorrayne',
-  '5º — Emerson & Fernanda',
-  '6º — Kelvin & Milena',
-  '7º — Laiza & Johnny',
-  '8º — Lousiana & Antônio Carlos',
-  '9º — Marcel & Ana Maria',
-  '10º — Maryane & Thyago',
-  '11º — Tatiane & Joel',
-  '12º — Wislaine & Matheus',
+  'Admilson & Hellen',
+  'Alcebiades & Bruna',
+  'Aline & Jhonathan',
+  'Antônio Júnior & Lorrayne',
+  'Emerson & Fernanda',
+  'Kelvin & Milena',
+  'Laiza & Johnny',
+  'Lousiana & Antônio Carlos',
+  'Marcel & Ana Maria',
+  'Maryane & Thyago',
+  'Tatiane & Joel',
+  'Wislaine & Matheus',
 ];
 
 export const TODOS_PADRINHOS: CoupleEntry[] = PADRINHOS_ORDEM_ENTRADA.map((name) => ({
