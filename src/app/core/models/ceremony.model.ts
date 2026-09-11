@@ -133,18 +133,18 @@ export const PASTORES = ['Ademir', 'Sandra', 'Etevildo da Silveira', 'Maria Luci
 
 /** Ordem real de entrada, intercalando um casal de cada lado (conforme roteiro). */
 export const PADRINHOS_ORDEM_ENTRADA = [
-  'Kelvin & Milena',
-  'Lousiana & Antônio Carlos',
+  'Admilson & Hellen',
   'Alcebiades & Bruna',
-  'Tatiane & Joel',
+  'Aline & Jhonathan',
   'Antônio Júnior & Lorrayne',
-  'Wislaine & Matheus',
+  'Emerson & Fernanda',
+  'Kelvin & Milena',
+  'Laiza & Johnny',
+  'Lousiana & Antônio Carlos',
   'Marcel & Ana Maria',
   'Maryane & Thyago',
-  'Emerson & Fernanda',
-  'Aline & Jhonathan',
-  'Admilson & Hellen',
-  'Laiza & Johnny',
+  'Tatiane & Joel',
+  'Wislaine & Matheus',
 ];
 
 export const TODOS_PADRINHOS: CoupleEntry[] = PADRINHOS_ORDEM_ENTRADA.map((name) => ({
@@ -1009,7 +1009,7 @@ O amor de família é o alicerce de nossas vidas. Para abençoar este caminho, c
     id: 'step-6',
     order: 6,
     title: 'Padrinhos',
-    participants: '12 casais de padrinhos, alternando 1 do noivo / 1 da noiva:',
+    participants: '12 casais de padrinhos, em ordem alfabética:',
     participantsList: PADRINHOS_ORDEM_ENTRADA,
     songId: 'quao-lindo-esse-nome-e',
     speech: [
