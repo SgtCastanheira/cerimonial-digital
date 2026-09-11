@@ -129,7 +129,7 @@ export const PAIS_NOIVO = ['Valtemir', 'Idamar'];
 export const PAIS_NOIVA = ['Creosmar', 'Shierley'];
 export const OBS_SHIERLEY = 'Shierley não entra no cortejo inicial. Ela participa da saída, ao lado de Creosmar.';
 
-export const PASTORES = ['Etevildo da Silveira', 'Maria Lucia', 'Samuel Gonçalves', 'Márcia da Silveira'];
+export const PASTORES = ['Ademir', 'Sandra', 'Etevildo da Silveira', 'Maria Lucia', 'Samuel Gonçalves', 'Márcia da Silveira'];
 
 /** Ordem real de entrada, intercalando um casal de cada lado (conforme roteiro). */
 export const PADRINHOS_ORDEM_ENTRADA = [
@@ -143,7 +143,7 @@ export const PADRINHOS_ORDEM_ENTRADA = [
   'Maryane & Thyago',
   'Emerson & Fernanda',
   'Aline & Jhonathan',
-  'Leonardo & Helena',
+  'Admilson & Hellen',
   'Laiza & Johnny',
 ];
 
@@ -948,15 +948,15 @@ As famílias Flauzino e Castanheira Faria, com alegria e gratidão, damos as boa
     id: 'step-2',
     order: 2,
     title: 'Apresentação dos pastores',
-    participants: 'Entram em dois momentos:',
-    participantsList: ['1º — Etevildo da Silveira & Maria Lucia', '2º — Samuel Gonçalves & Márcia da Silveira'],
+    participants: 'Entram em três momentos:',
+    participantsList: ['1º — Pr. Ademir & Sandra', '2º — Etevildo da Silveira & Maria Lucia', '3º — Samuel Gonçalves & Márcia da Silveira'],
     noSong: true,
     speech: [
       {
         title: 'Apresentação dos pastores',
-        text: `Convidamos, neste momento, aquele que conduzirá esta cerimônia com sabedoria e unção: o servo de Deus que vem em nome do Senhor para abençoar esta união.
+        text: `Convidamos, neste momento, aqueles que conduzirão esta cerimônia com sabedoria e unção: os servos de Deus que vêm em nome do Senhor para abençoar esta união.
 
-Recebamos com gratidão e reverência o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
+Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa Sandra, o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
       },
     ],
   },
