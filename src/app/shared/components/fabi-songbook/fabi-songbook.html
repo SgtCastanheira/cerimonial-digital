@@ -7,9 +7,17 @@
         [id]="'fabi-song-' + song.id"
         [expanded]="song.id === state.currentSong()?.id"
         [class.is-current]="song.id === state.currentSong()?.id"
+        [class.is-played]="state.isSongPlayed(song.id)"
       >
         <mat-expansion-panel-header>
           <mat-panel-title>
+            <span class="checkbox-wrap" (click)="$event.stopPropagation()">
+              <mat-checkbox
+                [checked]="state.isSongPlayed(song.id)"
+                (change)="state.toggleSongPlayed(song.id)"
+                aria-label="Marcar música como já tocada"
+              />
+            </span>
             <span class="song-order">{{ song.order.toString().padStart(2, '0') }}</span>
             {{ song.title }}
             @if (stepBySongId[song.id]; as info) {

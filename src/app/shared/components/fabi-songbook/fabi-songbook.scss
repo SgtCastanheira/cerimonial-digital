@@ -31,6 +31,20 @@
   box-shadow: 0 0 0 1px var(--gold);
 }
 
+.checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2px;
+}
+
+::ng-deep .fabi-book .mat-expansion-panel.is-played {
+  opacity: 0.55;
+}
+
+::ng-deep .fabi-book .mat-expansion-panel.is-played .mat-expansion-panel-header-title {
+  text-decoration: line-through;
+}
+
 ::ng-deep .fabi-book .mat-expansion-panel-header {
   height: auto !important;
   min-height: 56px;

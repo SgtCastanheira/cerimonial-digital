@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input, effect, inject } from '@angular/core';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CEREMONY_STEPS, SONGS } from '../../../core/models/ceremony.model';
 import { CeremonyStateService } from '../../../core/services/ceremony-state.service';
@@ -26,7 +27,7 @@ function buildStepBySongId(): Record<string, StepSongInfo> {
 
 @Component({
   selector: 'app-fabi-songbook',
-  imports: [MatExpansionModule],
+  imports: [MatCheckboxModule, MatExpansionModule],
   templateUrl: './fabi-songbook.html',
   styleUrl: './fabi-songbook.scss',
 })
