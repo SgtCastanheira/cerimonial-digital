@@ -108,8 +108,8 @@ export const VENUE_STAFF: StaffMember[] = [
   { id: 'kaio', name: 'Kaio', role: 'Garçom', phone: '(65) 9.8414-5282', waPhone: '5565984145282', reportsToId: 'cleiton' },
   { id: 'lucas', name: 'Lucas', role: 'Garçom', phone: '(65) 9.9226-3881', waPhone: '5565992263881', reportsToId: 'cleiton' },
   { id: 'ruan', name: 'Ruan', role: 'Garçom', phone: '(65) 9.9323-4534', waPhone: '5565993234534', reportsToId: 'cleiton' },
-  { id: 'gemeos-1', name: 'Lucas Gabriel', role: 'Garçom', phone: '(65) 9816-2923', waPhone: '556598162923', reportsToId: 'cleiton' },
-  { id: 'gemeos-2', name: 'Luis Linhares', role: 'Garçom', phone: '(65) 9963-6768', waPhone: '556599636768', reportsToId: 'cleiton' },
+  { id: 'gemeos-1', name: 'Lucas Gabriel', role: 'Garçom', phone: '(65) 9.9816-2923', waPhone: '5565998162923', reportsToId: 'cleiton' },
+  { id: 'gemeos-2', name: 'Luis Linhares', role: 'Garçom', phone: '(65) 9.9963-6768', waPhone: '5565999636768', reportsToId: 'cleiton' },
   { id: 'henrique-cesar', name: 'Henrique Cesar', role: 'Garçom', phone: '(65) 9.9293-0015', waPhone: '5565992930015', reportsToId: 'cleiton' },
 
   { id: 'cinei', name: 'Cinei', role: 'Cerimonialista - Roteirista', teamName: 'Cerimonialista', flatMembers: true },
@@ -135,8 +135,6 @@ export const NOIVOS = { noivo: 'Valtemir Junior', noiva: 'Thamara' };
 export const PAIS_NOIVO = ['Valtemir', 'Idamar'];
 export const PAIS_NOIVA = ['Creosmar', 'Shierley'];
 export const OBS_SHIERLEY = 'Shierley não entra no cortejo inicial. Ela participa da saída, ao lado de Creosmar.';
-
-export const PASTORES = ['Ademir', 'Sandra', 'Etevildo da Silveira', 'Maria Lucia', 'Samuel Gonçalves', 'Márcia da Silveira'];
 
 /** Ordem real de entrada, intercalando um casal de cada lado (conforme roteiro). */
 export const PADRINHOS_ORDEM_ENTRADA = [
@@ -1043,7 +1041,7 @@ Neste momento, recebemos com muito carinho a criança Nayla, trazendo a Bíblia 
   {
     id: 'step-4',
     order: 4,
-    title: 'Avós e Tia',
+    title: 'Avós e tia',
     participants: 'Entram em sequência:',
     participantsList: ['Pascoal & Sônia', 'Maria (avó paterna)', 'Cleonice (tia)'],
     songId: 'deus-e-deus',
