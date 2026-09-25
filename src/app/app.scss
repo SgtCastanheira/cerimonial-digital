@@ -72,40 +72,4 @@
   ::ng-deep mat-icon {
     color: var(--accent-on-dark);
   }
-
-  .drawer-theme {
-    margin-top: auto;
-    padding: 16px 20px calc(16px + env(safe-area-inset-bottom));
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-
-    .field-label {
-      color: rgba(255, 255, 255, 0.6);
-      margin-bottom: 8px;
-    }
-  }
-
-  ::ng-deep .drawer-theme .mat-button-toggle-group {
-    border-color: rgba(255, 255, 255, 0.25);
-    width: 100%;
-  }
-
-  ::ng-deep .drawer-theme .mat-button-toggle {
-    flex: 1 1 auto;
-    color: rgba(255, 255, 255, 0.75);
-    background: transparent;
-  }
-
-  ::ng-deep .drawer-theme .mat-button-toggle-checked {
-    background: rgba(255, 255, 255, 0.14);
-    color: #fff;
-  }
-
-  ::ng-deep .drawer-theme .mat-button-toggle-label-content {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    line-height: 1;
-    padding: 8px 4px;
-    font-size: 0.82rem;
-  }
 }

@@ -24,24 +24,6 @@
         </a>
       }
     </mat-nav-list>
-
-    <div class="drawer-theme">
-      <span class="field-label">Aparência</span>
-      <mat-button-toggle-group
-        [value]="theme.mode()"
-        (change)="theme.setMode($event.value)"
-        aria-label="Tema claro ou escuro"
-      >
-        <mat-button-toggle value="light">
-          <mat-icon>light_mode</mat-icon>
-          Claro
-        </mat-button-toggle>
-        <mat-button-toggle value="dark">
-          <mat-icon>dark_mode</mat-icon>
-          Escuro
-        </mat-button-toggle>
-      </mat-button-toggle-group>
-    </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -54,6 +36,13 @@
       </button>
       <span class="topbar-title font-display">Valtemir Junior &amp; Thamara</span>
       <span class="spacer"></span>
+      <button
+        mat-icon-button
+        (click)="theme.toggle()"
+        [attr.aria-label]="theme.mode() === 'dark' ? 'Mudar para tema claro' : 'Mudar para tema escuro'"
+      >
+        <mat-icon>{{ theme.mode() === 'dark' ? 'dark_mode' : 'light_mode' }}</mat-icon>
+      </button>
     </mat-toolbar>
 
     <main class="content">

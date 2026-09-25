@@ -5,7 +5,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ThemeService } from './core/services/theme.service';
 
 interface NavItem {
@@ -25,7 +24,6 @@ interface NavItem {
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    MatButtonToggleModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
