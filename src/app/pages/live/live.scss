@@ -1,5 +1,5 @@
 .live-header {
-  background: var(--ink);
+  background: var(--surface-dark);
   color: #fff;
   padding: 20px 16px;
   display: flex;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   font-size: 0.7rem;
-  color: var(--gold-soft);
+  color: var(--accent-on-dark);
 }
 
 .progress-label {
@@ -116,7 +116,7 @@
   li {
     font-size: 0.9rem;
     padding: 3px 9px;
-    background: rgba(0, 0, 0, 0.03);
+    background: var(--surface-soft);
     border-radius: 6px;
     cursor: pointer;
     user-select: none;
@@ -150,7 +150,7 @@
 }
 
 .cues-card {
-  background: #fff8ea;
+  background: var(--speech-bg);
   border: 1px solid var(--gold-soft);
   border-radius: 14px;
   padding: 14px 18px;

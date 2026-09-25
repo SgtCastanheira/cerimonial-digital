@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 8px;
   border-radius: 14px;
-  background: var(--ink);
+  background: var(--surface-dark);
   color: #fff;
   font-size: 1.05rem;
   font-weight: 700;
@@ -35,5 +35,5 @@ mat-icon,
 }
 
 mat-icon {
-  color: var(--gold-soft);
+  color: var(--accent-on-dark);
 }

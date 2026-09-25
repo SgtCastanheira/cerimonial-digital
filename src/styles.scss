@@ -13,6 +13,11 @@ html {
 }
 
 :root {
+  /* Cores fixas, usadas nas barras/botões escuros em qualquer tema */
+  --surface-dark: #1e2a44;
+  --accent-on-dark: #d6d3ca;
+
+  /* Cores de tema — mudam entre claro e escuro */
   --gold: #1a1a1a;
   --gold-soft: #d6d3ca;
   --ink: #12141a;
@@ -20,8 +25,27 @@ html {
   --paper: #ffffff;
   --paper-dim: #f6f5f2;
   --line: #e5e2da;
+  --saida-bg: #f1ecff;
+  --saida-accent: #7c5cd6;
+  --speech-bg: #fff8ea;
+  --surface-soft: rgba(0, 0, 0, 0.03);
+
   --font-display: 'Cormorant Garamond', 'Georgia', serif;
   --font-body: 'Inter', 'Roboto', sans-serif;
+}
+
+:root[data-theme='dark'] {
+  --gold: #e8e6df;
+  --gold-soft: #333c58;
+  --ink: #eef0f5;
+  --ink-soft: #b9bcc7;
+  --paper: #1b2338;
+  --paper-dim: #0d1220;
+  --line: #2b3350;
+  --saida-bg: #241f38;
+  --saida-accent: #a48cf0;
+  --speech-bg: #241f2a;
+  --surface-soft: rgba(255, 255, 255, 0.06);
 }
 
 * {
@@ -36,6 +60,7 @@ body {
 body {
   color-scheme: light;
   background-color: var(--paper-dim);
+  transition: background-color 0.2s ease, color 0.2s ease;
   color: var(--ink);
   font: var(--mat-sys-body-medium);
   font-family: var(--font-body);
@@ -51,8 +76,12 @@ h3,
   letter-spacing: 0.02em;
 }
 
+:root[data-theme='dark'] body {
+  color-scheme: dark;
+}
+
 .gold-text {
-  color: var(--gold-soft);
+  color: var(--accent-on-dark);
 }
 
 .container-page {
@@ -102,7 +131,7 @@ h3,
 }
 
 .speech-card {
-  background: #fff8ea;
+  background: var(--speech-bg);
   border-color: var(--gold-soft);
 }
 
@@ -151,7 +180,7 @@ h3,
   width: 100%;
   border: none;
   border-radius: 16px;
-  background: var(--ink);
+  background: var(--surface-dark);
   color: #fff;
   padding: 18px;
   font-size: 1rem;
@@ -164,6 +193,6 @@ h3,
   margin-top: 8px;
 
   mat-icon {
-    color: var(--gold-soft);
+    color: var(--accent-on-dark);
   }
 }

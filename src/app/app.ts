@@ -1,10 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ThemeService } from './core/services/theme.service';
 
 interface NavItem {
   path: string;
@@ -23,12 +25,14 @@ interface NavItem {
     MatIconModule,
     MatListModule,
     MatButtonModule,
+    MatButtonToggleModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
   protected readonly menuOpen = signal(false);
+  protected readonly theme = inject(ThemeService);
 
   protected readonly navItems: NavItem[] = [
     { path: '/', icon: 'favorite', label: 'Início' },

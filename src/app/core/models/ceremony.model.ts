@@ -60,6 +60,12 @@ export interface CeremonyStep {
   isSaida?: boolean;
 }
 
+export interface StepGroup {
+  id: string;
+  title: string;
+  stepIds: string[];
+}
+
 
 // ---------------------------------------------------------------------------
 // EQUIPE MUSICAL
@@ -1102,9 +1108,7 @@ Sejam bem-vindos a este altar, onde não apenas se firmam alianças humanas, mas
   {
     id: 'step-8',
     order: 8,
-    title: 'Plaquinha — Criança Safira',
-    participants: 'Criança Safira',
-    plaquinha: 'Lá vem o noivo',
+    title: 'Plaquinha Lá vem o Noivo - Safira',
     noSong: true,
   },
   {
@@ -1129,9 +1133,7 @@ Valtemir Junior!`,
   {
     id: 'step-10',
     order: 10,
-    title: 'Plaquinha — Criança Lívia',
-    participants: 'Criança Lívia',
-    plaquinha: 'Aí vem a noiva',
+    title: 'Plaquinha Lá vem a Noiva - Lívia',
     noSong: true,
   },
   {
@@ -1325,6 +1327,29 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     participants: `${NOIVOS.noivo} & ${NOIVOS.noiva}`,
     songId: 'a-bencao',
     isSaida: true,
+  },
+];
+
+export const STEP_GROUPS: StepGroup[] = [
+  {
+    id: 'group-1',
+    title: '1ª parte — Abertura',
+    stepIds: ['step-1', 'step-2', 'step-3'],
+  },
+  {
+    id: 'group-2',
+    title: '2ª parte — Cortejo de entrada',
+    stepIds: ['step-4', 'step-5', 'step-6', 'step-7', 'step-8', 'step-9', 'step-10', 'step-11'],
+  },
+  {
+    id: 'group-3',
+    title: '3ª parte — Entrada da noiva e cerimônia',
+    stepIds: ['step-12', 'step-13', 'step-14', 'step-15', 'step-16'],
+  },
+  {
+    id: 'group-4',
+    title: '4ª parte — Saída',
+    stepIds: ['step-17', 'step-18', 'step-19', 'step-20', 'step-21', 'step-22', 'step-23'],
   },
 ];
 
