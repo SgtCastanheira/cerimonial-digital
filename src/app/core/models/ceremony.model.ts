@@ -110,6 +110,7 @@ export const VENUE_STAFF: StaffMember[] = [
   { id: 'ruan', name: 'Ruan', role: 'Garçom', phone: '(65) 9.9323-4534', waPhone: '5565993234534', reportsToId: 'cleiton' },
   { id: 'gemeos-1', name: 'Lucas Gabriel', role: 'Garçom', phone: '(65) 9816-2923', waPhone: '556598162923', reportsToId: 'cleiton' },
   { id: 'gemeos-2', name: 'Luis Linhares', role: 'Garçom', phone: '(65) 9963-6768', waPhone: '556599636768', reportsToId: 'cleiton' },
+  { id: 'henrique-cesar', name: 'Henrique Cesar', role: 'Garçom', phone: '(65) 9.9293-0015', waPhone: '5565992930015', reportsToId: 'cleiton' },
 
   { id: 'cinei', name: 'Cinei', role: 'Cerimonialista - Roteirista', teamName: 'Cerimonialista', flatMembers: true },
   { id: 'anderson', name: 'Anderson', role: 'Locutor', reportsToId: 'cinei' },
