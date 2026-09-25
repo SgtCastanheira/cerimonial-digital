@@ -1,0 +1,82 @@
+.fabi-book {
+  margin-top: 8px;
+
+  > .field-label {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+.song-order {
+  color: var(--ink);
+  font-weight: 700;
+  margin-right: 8px;
+  font-family: var(--font-display);
+}
+
+.current-badge {
+  margin-left: 8px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  background: var(--gold-soft);
+  border-radius: 999px;
+  padding: 2px 8px;
+  vertical-align: middle;
+}
+
+::ng-deep .fabi-book .mat-expansion-panel.is-current {
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+::ng-deep .fabi-book .mat-expansion-panel-header {
+  height: auto !important;
+  min-height: 56px;
+  padding: 14px 16px;
+}
+
+.fabi-lyrics {
+  padding-top: 4px;
+}
+
+.song-moment {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-left: 4px;
+}
+
+.lyrics-part {
+  padding: 14px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px dashed var(--line);
+  }
+}
+
+.lyrics-part-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.lyrics-running {
+  white-space: pre-line;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.lyrics-empty {
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0;
+}

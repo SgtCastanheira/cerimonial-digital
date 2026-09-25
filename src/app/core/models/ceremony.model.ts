@@ -170,13 +170,70 @@ export const AVOS_TIA = ['Pascoal', 'Sonia', 'Maria', 'Cleonice'];
 
 export const SONGS: Song[] = [
   {
+    id: 'oferta-agradavel-a-ti',
+    order: 2,
+    title: 'Oferta Agradável a Ti',
+    artist: 'Cassiane',
+    youtubeUrl: 'https://www.youtube.com/watch?v=hXMfqQSx7H0',
+    usage: 'Entrada da Bíblia',
+    plannedTime: '--:--',
+    structure: '1ª estrofe + 2ª estrofe + refrão',
+    instrumentation: 'Abner + Carol + Fabiana',
+    editableFields: [],
+    lyrics: `A Tua Palavra escondi
+Guardada no meu coração
+Pra eu não pecar contra Ti, Senhor
+A Tua Palavra escondi
+
+Minhas vestes no sangue lavei
+E das Tuas águas bebi
+Pra ser uma oferta agradável a Ti
+Minha vida a Ti consagrei
+
+Meus dons e talentos são pra Te servir
+Meus dons preciosos são Teus
+Não vejo razão na minha vida sem Ti
+Tu és meu Senhor e meu Deus
+Assim como o fogo refina o ouro
+Vem Tua obra em mim completar
+Até que o mundo possa ver
+Tua glória em meu rosto brilhar`,
+    lyricsBySection: [
+      {
+        label: '1ª estrofe',
+        text: `A Tua Palavra escondi
+Guardada no meu coração
+Pra eu não pecar contra Ti, Senhor
+A Tua Palavra escondi`,
+      },
+      {
+        label: '2ª estrofe',
+        text: `Minhas vestes no sangue lavei
+E das Tuas águas bebi
+Pra ser uma oferta agradável a Ti
+Minha vida a Ti consagrei`,
+      },
+      {
+        label: 'Refrão',
+        text: `Meus dons e talentos são pra Te servir
+Meus dons preciosos são Teus
+Não vejo razão na minha vida sem Ti
+Tu és meu Senhor e meu Deus
+Assim como o fogo refina o ouro
+Vem Tua obra em mim completar
+Até que o mundo possa ver
+Tua glória em meu rosto brilhar`,
+      },
+    ],
+  },
+  {
     id: 'ale-a-gloria',
     order: 1,
     title: 'A Ele a Glória',
     videoTitle: 'ROCHA - A ELE A GLÓRIA (CLIPE OFICIAL)',
     artist: 'Gabriela Rocha',
     youtubeUrl: 'https://www.youtube.com/watch?v=9p3qBC3VotM',
-    usage: 'Bíblia + Pastores',
+    usage: 'Entrada dos pastores',
     plannedTime: '2:00–2:40',
     structure: 'Introdução + primeira parte + refrão + encerramento',
     instrumentation: 'Abner + Carol + Fabiana',
@@ -288,7 +345,7 @@ Pra sempre, amém`,
   },
   {
     id: 'deus-de-promessas',
-    order: 3,
+    order: 5,
     title: 'Deus de Promessas',
     artist: 'Davi Sacer',
     youtubeUrl: 'https://www.youtube.com/watch?v=iwe-a-T8KYI',
@@ -369,7 +426,7 @@ Mas Tua Palavra vai se cumprir`,
   },
   {
     id: 'gratidao',
-    order: 5,
+    order: 4,
     title: 'Gratidão',
     artist: 'Felipe Rodrigues',
     videoTitle: 'Gratidão — Ministração ao vivo',
@@ -480,7 +537,7 @@ O nome de Jesus`,
   },
   {
     id: 'eu-te-agradeco',
-    order: 4,
+    order: 7,
     title: 'Eu Te Agradeço',
     artist: 'Preto No Branco (part. Israel Salazar)',
     videoTitle: 'Preto no Branco, Weslei Santos - Eu Te Agradeço (Ao Vivo) ft. Israel Salazar',
@@ -504,7 +561,7 @@ E me fez viver`,
   },
   {
     id: 'deus-e-deus',
-    order: 2,
+    order: 3,
     title: 'Deus é Deus',
     artist: 'Delino Marçal',
     youtubeUrl: 'https://www.youtube.com/watch?v=JPqitveFAGo',
@@ -516,7 +573,7 @@ E me fez viver`,
   },
   {
     id: 'santo-espirito',
-    order: 7,
+    order: 8,
     title: 'Santo Espírito',
     artist: 'Laura Souguellis',
     youtubeUrl: 'https://www.youtube.com/watch?v=J2rTdu7vqTE',
@@ -624,7 +681,7 @@ Tua presença`,
   },
   {
     id: 'marcha-nupcial',
-    order: 8,
+    order: 9,
     title: 'Marcha Nupcial',
     youtubeUrl: 'https://youtu.be/VqcysKk1wf8?is=fY6dai79nQbD56JG',
     usage: 'ENTRADA DA NOIVA — THAMARA (acompanhante: Creosmar)',
@@ -634,7 +691,7 @@ Tua presença`,
   },
   {
     id: 'agnus-dei',
-    order: 9,
+    order: 10,
     title: 'Agnus Dei',
     artist: 'David Quinlan',
     youtubeUrl: 'https://www.youtube.com/watch?v=ag1StnggWkM',
@@ -719,7 +776,7 @@ Te amo`,
   },
   {
     id: 'que-bom-que-voce-chegou',
-    order: 10,
+    order: 11,
     title: 'Que Bom que Você Chegou',
     artist: 'Bruna Karla',
     youtubeUrl: 'https://www.youtube.com/watch?v=te8tOyon9e4',
@@ -828,7 +885,7 @@ Agora sua mulher`,
   },
   {
     id: 'a-bencao',
-    order: 11,
+    order: 12,
     title: 'A Bênção',
     artist: 'Gabriel Guedes (part. Nívea Soares)',
     youtubeUrl: 'https://www.youtube.com/watch?v=v8gaG2ed01I',
@@ -947,13 +1004,13 @@ As famílias Flauzino e Castanheira Faria, com alegria e gratidão, damos as boa
   {
     id: 'step-2',
     order: 2,
-    title: 'Apresentação dos pastores',
+    title: 'Entrada dos pastores',
     participants: 'Entram em três momentos:',
     participantsList: ['1º — Pr. Ademir & Sandra', '2º — Etevildo da Silveira & Maria Lucia', '3º — Samuel Gonçalves & Márcia da Silveira'],
-    noSong: true,
+    songId: 'ale-a-gloria',
     speech: [
       {
-        title: 'Apresentação dos pastores',
+        title: 'Entrada dos pastores',
         text: `Convidamos, neste momento, aqueles que conduzirão esta cerimônia com sabedoria e unção: os servos de Deus que vêm em nome do Senhor para abençoar esta união.
 
 Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa Sandra, o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
@@ -966,7 +1023,7 @@ Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa S
     title: 'Entrada da Bíblia',
     participants: 'Bíblia levada pela criança — ela deixa a Bíblia no púlpito',
     participantsList: ['Nayla'],
-    songId: 'ale-a-gloria',
+    songId: 'oferta-agradavel-a-ti',
     speech: [
       {
         title: 'Entrada da Bíblia',
@@ -1008,6 +1065,23 @@ O amor de família é o alicerce de nossas vidas. Para abençoar este caminho, c
   {
     id: 'step-6',
     order: 6,
+    title: 'Pais do noivo',
+    participants: PAIS_NOIVO.join(' e '),
+    songId: 'deus-de-promessas',
+    speech: [
+      {
+        title: 'Entrada dos pais',
+        text: `Neste momento, convidamos com muito carinho aqueles que foram os primeiros a amar, a cuidar e a sonhar com este dia tão especial.
+
+São eles que guiaram, com fé e dedicação, os passos dos noivos até aqui.
+
+Com gratidão e honra, recebamos os pais do noivo, que agora caminham até este altar para abençoar e testemunhar a união de seu filho, celebrando o fruto do amor que cultivaram em sua família.`,
+      },
+    ],
+  },
+  {
+    id: 'step-7',
+    order: 7,
     title: 'Padrinhos',
     participants: '12 casais de padrinhos, em ordem alfabética:',
     participantsList: PADRINHOS_ORDEM_ENTRADA,
@@ -1022,23 +1096,6 @@ Queridos padrinhos, vocês não estão aqui apenas para acompanhar este momento 
 A presença de vocês hoje representa laços de afeto, confiança e espiritualidade. Que cada um de vocês seja, ao longo da caminhada dos noivos, um exemplo de amor, amizade e fé.
 
 Sejam bem-vindos a este altar, onde não apenas se firmam alianças humanas, mas também se consagram propósitos diante de Deus.`,
-      },
-    ],
-  },
-  {
-    id: 'step-7',
-    order: 7,
-    title: 'Pais do noivo',
-    participants: PAIS_NOIVO.join(' e '),
-    songId: 'deus-de-promessas',
-    speech: [
-      {
-        title: 'Entrada dos pais',
-        text: `Neste momento, convidamos com muito carinho aqueles que foram os primeiros a amar, a cuidar e a sonhar com este dia tão especial.
-
-São eles que guiaram, com fé e dedicação, os passos dos noivos até aqui.
-
-Com gratidão e honra, recebamos os pais do noivo, que agora caminham até este altar para abençoar e testemunhar a união de seu filho, celebrando o fruto do amor que cultivaram em sua família.`,
       },
     ],
   },
@@ -1218,7 +1275,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 17,
     title: 'Saída dos avós e tias',
     participantsList: AVOS_TIA,
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
   {
@@ -1226,7 +1283,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 18,
     title: 'Saída dos pais dos noivos',
     participantsList: [PAIS_NOIVO.join(' e '), PAIS_NOIVA.join(' e ')],
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
   {
@@ -1234,7 +1291,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 19,
     title: 'Saída dos padrinhos',
     participantsList: PADRINHOS_ORDEM_ENTRADA,
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
   {
@@ -1242,7 +1299,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 20,
     title: 'Saída das amigas da noiva',
     participantsList: FLORISTAS_1.nomes,
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
   {
@@ -1250,7 +1307,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 21,
     title: 'Saída da florista',
     participantsList: FLORISTAS_2.nomes,
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
   {
@@ -1258,7 +1315,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 22,
     title: 'Saída do porta-aliança',
     participants: 'Pedro e Emanuele',
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
   {
@@ -1266,7 +1323,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     order: 23,
     title: 'Saída dos noivos',
     participants: `${NOIVOS.noivo} & ${NOIVOS.noiva}`,
-    noSong: true,
+    songId: 'a-bencao',
     isSaida: true,
   },
 ];

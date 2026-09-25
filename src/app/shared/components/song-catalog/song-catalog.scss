@@ -8,19 +8,17 @@
 }
 
 .song-order {
-  color: var(--gold);
+  color: var(--ink);
   font-weight: 700;
   margin-right: 8px;
   font-family: var(--font-display);
 }
 
-.song-usage {
-  display: block;
-  flex-basis: 100%;
+.song-moment {
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--ink-soft);
-  margin-top: 4px;
+  color: var(--ink);
+  margin-left: 4px;
 }
 
 .current-badge {
@@ -38,6 +36,20 @@
 ::ng-deep .mat-expansion-panel.is-current {
   border: 1px solid var(--gold);
   box-shadow: 0 0 0 1px var(--gold);
+}
+
+.checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2px;
+}
+
+::ng-deep .mat-expansion-panel.is-played {
+  opacity: 0.55;
+}
+
+::ng-deep .mat-expansion-panel.is-played .mat-expansion-panel-header-title {
+  text-decoration: line-through;
 }
 
 ::ng-deep .mat-expansion-panel-header {
@@ -65,7 +77,7 @@
   flex-basis: 100%;
   margin-top: 2px;
   justify-content: flex-start;
-  color: var(--gold);
+  color: var(--gold) !important;
   font-weight: 700;
 }
 

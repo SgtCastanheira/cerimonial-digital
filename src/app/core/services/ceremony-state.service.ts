@@ -15,6 +15,7 @@ interface PersistedState {
   padrinhosTimes: Record<string, PadrinhoTime>;
   completedStepIds: string[];
   markedParticipants: string[];
+  playedSongIds: string[];
 }
 
 function loadPersisted(): Partial<PersistedState> {
@@ -46,6 +47,7 @@ export class CeremonyStateService {
   readonly padrinhosTimes = signal<Record<string, PadrinhoTime>>(this.persisted.padrinhosTimes ?? {});
   readonly completedStepIds = signal<Set<string>>(new Set(this.persisted.completedStepIds ?? []));
   readonly markedParticipants = signal<Set<string>>(new Set(this.persisted.markedParticipants ?? []));
+  readonly playedSongIds = signal<Set<string>>(new Set(this.persisted.playedSongIds ?? []));
 
   constructor() {
     effect(() => {
@@ -54,6 +56,7 @@ export class CeremonyStateService {
         padrinhosTimes: this.padrinhosTimes(),
         completedStepIds: [...this.completedStepIds()],
         markedParticipants: [...this.markedParticipants()],
+        playedSongIds: [...this.playedSongIds()],
       };
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
@@ -90,6 +93,18 @@ export class CeremonyStateService {
 
   isStepCompleted(stepId: string): boolean {
     return this.completedStepIds().has(stepId);
+  }
+
+  toggleSongPlayed(songId: string): void {
+    this.playedSongIds.update((set) => {
+      const next = new Set(set);
+      next.has(songId) ? next.delete(songId) : next.add(songId);
+      return next;
+    });
+  }
+
+  isSongPlayed(songId: string): boolean {
+    return this.playedSongIds().has(songId);
   }
 
   toggleParticipant(stepId: string, name: string): void {

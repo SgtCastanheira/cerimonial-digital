@@ -1,5 +1,6 @@
 import { Component, ElementRef, effect, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CEREMONY_STEPS, SONGS, TODOS_PADRINHOS } from '../../../core/models/ceremony.model';
 import { YoutubePlayer } from '../youtube-player/youtube-player';
@@ -15,11 +16,13 @@ interface StepSongInfo {
 function buildStepBySongId(): Record<string, StepSongInfo> {
   const map: Record<string, StepSongInfo> = {};
   for (const step of CEREMONY_STEPS) {
-    if (step.songId) {
+    if (step.songId && !map[step.songId]) {
       map[step.songId] = { stepId: step.id, stepTitle: step.title, participants: step.participants, participantsList: step.participantsList };
     }
     for (const phase of step.phases ?? []) {
-      map[phase.songId] = { stepId: step.id, stepTitle: step.title, participants: step.participants, participantsList: step.participantsList };
+      if (!map[phase.songId]) {
+        map[phase.songId] = { stepId: step.id, stepTitle: step.title, participants: step.participants, participantsList: step.participantsList };
+      }
     }
   }
   return map;
@@ -27,7 +30,7 @@ function buildStepBySongId(): Record<string, StepSongInfo> {
 
 @Component({
   selector: 'app-song-catalog',
-  imports: [MatExpansionModule, FormsModule, YoutubePlayer],
+  imports: [MatCheckboxModule, MatExpansionModule, FormsModule, YoutubePlayer],
   templateUrl: './song-catalog.html',
   styleUrl: './song-catalog.scss',
 })

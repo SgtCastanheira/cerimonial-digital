@@ -3,35 +3,31 @@
 
   <mat-accordion multi="false">
     @for (song of songs; track song.id) {
-      <mat-expansion-panel [id]="'song-' + song.id" [expanded]="song.id === state.currentSong()?.id" [class.is-current]="song.id === state.currentSong()?.id">
+      <mat-expansion-panel
+        [id]="'song-' + song.id"
+        [expanded]="song.id === state.currentSong()?.id"
+        [class.is-current]="song.id === state.currentSong()?.id"
+        [class.is-played]="state.isSongPlayed(song.id)"
+      >
         <mat-expansion-panel-header>
           <mat-panel-title>
+            <span class="checkbox-wrap" (click)="$event.stopPropagation()">
+              <mat-checkbox
+                [checked]="state.isSongPlayed(song.id)"
+                (change)="state.toggleSongPlayed(song.id)"
+                aria-label="Marcar música como já tocada"
+              />
+            </span>
             <span class="song-order">{{ song.order.toString().padStart(2, '0') }}</span>
             {{ song.title }}
+            <span class="song-moment">- {{ stepBySongId[song.id]?.stepTitle ?? song.usage }}</span>
             @if (song.id === state.currentSong()?.id) {
               <span class="current-badge">ETAPA ATUAL</span>
             }
-            <span class="song-usage">{{ stepBySongId[song.id]?.stepTitle ?? song.usage }}</span>
           </mat-panel-title>
-          <mat-panel-description>{{ song.plannedTime }}</mat-panel-description>
         </mat-expansion-panel-header>
 
         <div class="song-detail">
-          @if (stepBySongId[song.id]?.participants; as participants) {
-            <p class="detail-line"><span class="field-label">Quem entra</span> {{ participants }}</p>
-          }
-          @if (stepBySongId[song.id]?.participantsList; as participantsList) {
-            <ul class="participants-grid">
-              @for (p of participantsList; track p) {
-                <li
-                  [class.is-marked]="state.isParticipantMarked(stepBySongId[song.id]!.stepId, p)"
-                  (click)="state.toggleParticipant(stepBySongId[song.id]!.stepId, p)"
-                >
-                  {{ p }}
-                </li>
-              }
-            </ul>
-          }
           @if (song.artist) {
             <p class="detail-line"><span class="field-label">Artista</span> {{ song.artist }}</p>
           }

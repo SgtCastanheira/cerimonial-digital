@@ -13,8 +13,8 @@ html {
 }
 
 :root {
-  --gold: #c9a15a;
-  --gold-soft: #e6d3a8;
+  --gold: #1a1a1a;
+  --gold-soft: #d6d3ca;
   --ink: #12141a;
   --ink-soft: #2a2d36;
   --paper: #ffffff;
@@ -52,7 +52,7 @@ h3,
 }
 
 .gold-text {
-  color: var(--gold);
+  color: var(--gold-soft);
 }
 
 .container-page {

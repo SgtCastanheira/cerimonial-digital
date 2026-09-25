@@ -1,0 +1,44 @@
+<div class="fabi-book">
+  <span class="field-label">Letras para cantar — {{ songs.length }} músicas</span>
+
+  <mat-accordion multi="false">
+    @for (song of songs; track song.id) {
+      <mat-expansion-panel
+        [id]="'fabi-song-' + song.id"
+        [expanded]="song.id === state.currentSong()?.id"
+        [class.is-current]="song.id === state.currentSong()?.id"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="song-order">{{ song.order.toString().padStart(2, '0') }}</span>
+            {{ song.title }}
+            @if (stepBySongId[song.id]; as info) {
+              <span class="song-moment">- {{ info.stepTitle }}</span>
+            }
+            @if (song.id === state.currentSong()?.id) {
+              <span class="current-badge">ETAPA ATUAL</span>
+            }
+          </mat-panel-title>
+          @if (song.artist) {
+            <mat-panel-description>{{ song.artist }}</mat-panel-description>
+          }
+        </mat-expansion-panel-header>
+
+        <div class="fabi-lyrics">
+          @if (song.lyricsBySection?.length) {
+            @for (part of song.lyricsBySection; track part.label) {
+              <div class="lyrics-part">
+                <span class="lyrics-part-label">{{ part.label }}</span>
+                <p class="lyrics-running">{{ part.text }}</p>
+              </div>
+            }
+          } @else if (song.lyrics) {
+            <p class="lyrics-running">{{ song.lyrics }}</p>
+          } @else {
+            <p class="lyrics-empty">Sem letra cadastrada.</p>
+          }
+        </div>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>

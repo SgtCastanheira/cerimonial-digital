@@ -1,4 +1,12 @@
 <div class="container-page">
   <h1 class="font-display page-title">Modo Músicos</h1>
-  <app-song-catalog />
+
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab label="Banco de Músicas">
+      <app-song-catalog />
+    </mat-tab>
+    <mat-tab label="Fabi">
+      <app-fabi-songbook musicianFilter="Fabiana" />
+    </mat-tab>
+  </mat-tab-group>
 </div>
