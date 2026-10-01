@@ -1283,11 +1283,14 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
     id: 'step-17',
     order: 17,
     title: 'Fotos e saída dos padrinhos',
-    participants: 'Padrinhos ficam no altar, de frente para os noivos, tiram foto e saem para formar o corredor da saída dos noivos',
+    participants: 'Os noivos ficam no altar. Os padrinhos sobem, casal por casal, para tirar foto — o homem do lado da noiva e a mulher do lado do noivo — depois saem para formar o corredor da saída dos noivos.',
     participantsList: PADRINHOS_ORDEM_ENTRADA,
     songId: 'a-bencao',
     isSaida: true,
-    extra: ['A Bênção é a música única de toda a saída.'],
+    extra: [
+      'A Bênção é a música única de toda a saída.',
+      'Depois dos padrinhos, entram as amigas da noiva e, em seguida, os familiares, completando o corredor até a saída dos noivos.',
+    ],
   },
   {
     id: 'step-18',
