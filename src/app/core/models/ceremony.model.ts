@@ -1090,9 +1090,13 @@ Valtemir Junior!`,
     speech: [
       {
         title: 'Entrada dos avós e tia',
-        text: `Senhoras e senhores, preparem os seus corações. Seguimos este momento tão especial acolhendo aqueles que são a base, a raiz e o início de toda essa história. Com seus passos sábios e corações cheios de orgulho, recebemos os avós dos nossos noivos. Eles que nos ensinam o verdadeiro significado de um amor que atravessa gerações. Uma salva de palmas para a entrada dos avós!
+        text: `Agora, com muito carinho e gratidão, recebemos aqueles que são a raiz e o alicerce de toda esta história.
 
-O amor de família é o alicerce de nossas vidas. Para abençoar este caminho, convidamos a tia Cleonice.`,
+Com passos sábios e corações cheios de orgulho, entram os avós dos nossos noivos — exemplos vivos de um amor que permanece firme e atravessa gerações.
+
+Recebamos o senhor Pascoal e a senhora Sônia, e a senhora Maria, avó paterna. Uma salva de palmas para os avós!
+
+E porque o amor de família é um presente de Deus em nossas vidas, recebamos também, com todo carinho, a tia Cleonice, que vem abençoar este caminho.`,
       },
     ],
   },
