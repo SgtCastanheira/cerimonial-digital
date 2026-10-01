@@ -53,6 +53,15 @@
       <p class="stage-plaquinha">{{ state.currentStep().plaquinha }}</p>
     }
 
+    @if (state.currentStep().extra?.length) {
+      <span class="field-label">Observações</span>
+      <ul class="extra-list">
+        @for (e of state.currentStep().extra; track e) {
+          <li>{{ e }}</li>
+        }
+      </ul>
+    }
+
     @if (state.hasNextPhase()) {
       <div class="next-block">
         <span class="field-label">Próxima fase (mesma etapa, sem cortar)</span>

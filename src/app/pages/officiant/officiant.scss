@@ -137,6 +137,13 @@
   font-style: italic;
 }
 
+.extra-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
 .participants-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

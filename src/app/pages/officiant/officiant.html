@@ -76,6 +76,14 @@
                 } @else if (step.songId) {
                   <p class="line"><strong>Música:</strong> {{ songById(step.songId)?.title }} ({{ songById(step.songId)?.plannedTime }})</p>
                 }
+
+                @if (step.extra?.length) {
+                  <ul class="extra-list">
+                    @for (e of step.extra; track e) {
+                      <li>{{ e }}</li>
+                    }
+                  </ul>
+                }
               </div>
             </mat-expansion-panel>
           }
