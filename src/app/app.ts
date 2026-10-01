@@ -36,8 +36,8 @@ export class App {
     { path: '/', icon: 'favorite', label: 'Início' },
     { path: '/cerimonialista', icon: 'record_voice_over', label: 'Cerimonialista' },
     { path: '/musicos', icon: 'piano', label: 'Músicos' },
-    { path: '/roteiro', icon: 'menu_book', label: 'Roteiro completo' },
-    { path: '/equipe', icon: 'groups', label: 'Equipe do local' },
+    { path: '/roteiro', icon: 'menu_book', label: 'Roteiro Completo' },
+    { path: '/equipe', icon: 'groups', label: 'Equipe do Local' },
   ];
 
   toggleMenu(): void {

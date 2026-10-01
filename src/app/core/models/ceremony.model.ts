@@ -176,7 +176,7 @@ export const AVOS_TIA = ['Pascoal', 'Sonia', 'Maria', 'Cleonice'];
 export const SONGS: Song[] = [
   {
     id: 'oferta-agradavel-a-ti',
-    order: 1,
+    order: 2,
     title: 'Oferta Agradável a Ti',
     artist: 'Cassiane',
     youtubeUrl: 'https://www.youtube.com/watch?v=hXMfqQSx7H0',
@@ -233,7 +233,7 @@ Tua glória em meu rosto brilhar`,
   },
   {
     id: 'ale-a-gloria',
-    order: 2,
+    order: 1,
     title: 'A Ele a Glória',
     videoTitle: 'ROCHA - A ELE A GLÓRIA (CLIPE OFICIAL)',
     artist: 'Gabriela Rocha',
@@ -744,7 +744,7 @@ Não há outro, não há outro como Tu, não, não, não
 Digno de louvor, digno de louvor
 
 Não há ninguém que se compare a Ti, Senhor
-Tu és o unico
+Tu és o único
 Digno do nosso louvor, da nossa adoração
 
 Amém
@@ -761,7 +761,7 @@ Amém
 Amém
 Amém, Senhor
 
-Ao ouvir o Teu espirito
+Ao ouvir o Teu espírito
 Ao ouvir o amor
 Dizemos Amém
 Amém
@@ -1007,8 +1007,24 @@ As famílias Flauzino e Castanheira Faria, com alegria e gratidão, damos as boa
     ],
   },
   {
-    id: 'step-3',
+    id: 'step-2',
     order: 2,
+    title: 'Entrada dos Pastores',
+    participants: 'Entram em três momentos:',
+    participantsList: ['1º — Pr. Ademir & Sandra', '2º — Etevildo da Silveira & Maria Lucia', '3º — Samuel Gonçalves & Márcia da Silveira'],
+    songId: 'ale-a-gloria',
+    speech: [
+      {
+        title: 'Entrada dos Pastores',
+        text: `Convidamos, neste momento, aqueles que conduzirão esta cerimônia com sabedoria e unção: os servos de Deus que vêm em nome do Senhor para abençoar esta união.
+
+Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa Sandra, o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
+      },
+    ],
+  },
+  {
+    id: 'step-3',
+    order: 3,
     title: 'Entrada da Bíblia',
     participants: 'Bíblia levada pela criança — ela deixa a Bíblia no púlpito',
     participantsList: ['Nayla'],
@@ -1023,25 +1039,9 @@ Neste momento, recebemos com muito carinho a criança Nayla, trazendo a Bíblia 
     ],
   },
   {
-    id: 'step-2',
-    order: 3,
-    title: 'Entrada dos pastores',
-    participants: 'Entram em três momentos:',
-    participantsList: ['1º — Pr. Ademir & Sandra', '2º — Etevildo da Silveira & Maria Lucia', '3º — Samuel Gonçalves & Márcia da Silveira'],
-    songId: 'ale-a-gloria',
-    speech: [
-      {
-        title: 'Entrada dos pastores',
-        text: `Convidamos, neste momento, aqueles que conduzirão esta cerimônia com sabedoria e unção: os servos de Deus que vêm em nome do Senhor para abençoar esta união.
-
-Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa Sandra, o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
-      },
-    ],
-  },
-  {
     id: 'step-8',
     order: 4,
-    title: 'Plaquinha Lá vem o Noivo - Safira',
+    title: 'Plaquinha Lá Vem o Noivo — Safira',
     noSong: true,
   },
   {
@@ -1055,7 +1055,7 @@ Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa S
     ],
     speech: [
       {
-        title: 'Fala da entrada do noivo',
+        title: 'Fala da Entrada do Noivo',
         text: `Que o Senhor seja sempre o alicerce do amor de vocês. Que cada passo da caminhada a dois seja guiado pela fé, pela confiança mútua e pelo propósito de honrar a Deus em cada escolha.
 
 O casamento é uma aliança não apenas entre duas pessoas, mas também com Deus, que abençoa, fortalece e sustenta o amor verdadeiro.
@@ -1069,13 +1069,13 @@ Valtemir Junior!`,
   {
     id: 'step-5',
     order: 6,
-    title: 'Amigas da noiva',
+    title: 'Amigas da Noiva',
     participantsList: FLORISTAS_1.nomes,
     songId: 'gratidao',
     plaquinha: 'Jesus é o Nosso Convidado de Honra',
     speech: [
       {
-        title: 'Entrada das amigas da noiva',
+        title: 'Entrada das Amigas da Noiva',
         text: `Vocês não foram apenas convidadas para estar aqui hoje; vocês fazem parte da minha história. Dividiram comigo os risos, seguraram minha mão nos momentos de dúvida e celebraram cada passo até este altar. Ter vocês ao meu lado no dia mais feliz da minha vida é a certeza de que a nossa amizade é um presente para sempre. Obrigada por serem meu refúgio e minha alegria. Amo vocês!`,
       },
     ],
@@ -1083,13 +1083,13 @@ Valtemir Junior!`,
   {
     id: 'step-4',
     order: 7,
-    title: 'Avós e tia',
+    title: 'Avós e Tia',
     participants: 'Entram em sequência:',
     participantsList: ['Pascoal & Sônia', 'Maria (avó paterna)', 'Cleonice (tia)'],
     songId: 'deus-e-deus',
     speech: [
       {
-        title: 'Entrada dos avós e tia',
+        title: 'Entrada dos Avós e Tia',
         text: `Agora, com muito carinho e gratidão, recebemos aqueles que são a raiz e o alicerce de toda esta história.
 
 Com passos sábios e corações cheios de orgulho, entram os avós dos nossos noivos — exemplos vivos de um amor que permanece firme e atravessa gerações.
@@ -1103,12 +1103,12 @@ E porque o amor de família é um presente de Deus em nossas vidas, recebamos ta
   {
     id: 'step-6',
     order: 8,
-    title: 'Pais do noivo',
+    title: 'Pais do Noivo',
     participants: PAIS_NOIVO.join(' e '),
     songId: 'deus-de-promessas',
     speech: [
       {
-        title: 'Entrada dos pais',
+        title: 'Entrada dos Pais',
         text: `Neste momento, convidamos com muito carinho aqueles que foram os primeiros a amar, a cuidar e a sonhar com este dia tão especial.
 
 São eles que guiaram, com fé e dedicação, os passos dos noivos até aqui.
@@ -1126,7 +1126,7 @@ Com gratidão e honra, recebamos os pais do noivo, que agora caminham até este 
     songId: 'quao-lindo-esse-nome-e',
     speech: [
       {
-        title: 'Entrada dos padrinhos',
+        title: 'Entrada dos Padrinhos',
         text: `Convidamos, neste momento, aqueles que foram escolhidos com muito carinho para testemunhar este ato de fé e amor: os padrinhos e madrinhas.
 
 Queridos padrinhos, vocês não estão aqui apenas para acompanhar este momento solene, mas para serem colunas de apoio, conselheiros e intercessores na vida deste casal.
@@ -1145,17 +1145,17 @@ Sejam bem-vindos a este altar, onde não apenas se firmam alianças humanas, mas
     songId: 'santo-espirito',
     speech: [
       {
-        title: 'Entrada das floristas',
+        title: 'Entrada das Floristas',
         text: `Com um sorriso no rosto e flores nas mãos, vocês anunciam que o amor chegou. Que a vida de vocês seja sempre colorida e cheia de luz como este momento.
 
-Aparecem flores na terra e chegou o tempo de celebrar. Recebam agora a nossa florista, que vem preparando o caminho com delicadeza, espalhando amor e alegria para o momento mais esperado.`,
+Aparecem flores na terra e chegou o tempo de celebrar. Recebam agora as nossas floristas, que vêm preparando o caminho com delicadeza, espalhando amor e alegria para o momento mais esperado.`,
       },
     ],
   },
   {
     id: 'step-10',
     order: 11,
-    title: 'Plaquinha Lá vem a Noiva - Lívia',
+    title: 'Plaquinha Lá Vem a Noiva — Lívia',
     noSong: true,
   },
   {
@@ -1180,7 +1180,7 @@ Aparecem flores na terra e chegou o tempo de celebrar. Recebam agora a nossa flo
     ],
     speech: [
       {
-        title: 'Fala da entrada da noiva',
+        title: 'Fala da Entrada da Noiva',
         text: `"Senhoras e senhores, preparem seus corações. O momento mais aguardado está prestes a começar."
 
 Agora, o momento mais esperado desta cerimônia…
@@ -1203,11 +1203,11 @@ Thamara Tallyeli!`,
   {
     id: 'step-13',
     order: 13,
-    title: 'Oração inicial',
+    title: 'Oração Inicial',
     noSong: true,
     speech: [
       {
-        title: 'Oração inicial',
+        title: 'Oração Inicial',
         text: `[Pastor faz a oração de abertura da cerimônia. Ao final, retorna ao seu lugar e a cerimônia segue normalmente a partir daqui.]`,
       },
     ],
@@ -1215,12 +1215,12 @@ Thamara Tallyeli!`,
   {
     id: 'step-14',
     order: 14,
-    title: 'Cerimônia religiosa',
+    title: 'Cerimônia Religiosa',
     participants: 'Ministração — MÚSICA OFF (Momento de reverência, sem música)',
     noSong: true,
     speech: [
       {
-        title: 'Passagem da palavra aos pastores',
+        title: 'Passagem da Palavra aos Pastores',
         text: `Neste momento tão especial, com os corações cheios de gratidão e reverência, passamos a palavra àqueles que conduzirão esta cerimônia diante de Deus.
 
 Com alegria e honra, convidamos o Pastor Samuel Gonçalves e o Pastor Etevildo da Silveira para ministrar esta celebração de amor, fé e aliança — um inicia, o outro completa a mensagem.
@@ -1247,7 +1247,7 @@ Que o Senhor os use como instrumentos para abençoar esta união e falar aos nos
     songId: 'que-bom-que-voce-chegou',
     speech: [
       {
-        title: 'Fala das alianças',
+        title: 'Fala das Alianças',
         text: `Neste momento, vamos receber um dos símbolos mais sagrados desta cerimônia: as alianças.
 
 Que entrem agora as alianças, sinal visível de uma aliança eterna. Elas representam o amor que não tem fim, o compromisso firmado diante de Deus, a fidelidade e a união que se renovam a cada novo dia.
@@ -1266,7 +1266,7 @@ Recebamos, com carinho e reverência, as alianças que selarão este amor diante
     songId: 'a-bencao',
     speech: [
       {
-        title: 'Fala de encerramento',
+        title: 'Fala de Encerramento',
         text: `Chegamos ao fim desta cerimônia, mas é apenas o começo de uma nova e linda jornada para este casal abençoado por Deus.
 
 Que esta união seja fortalecida a cada dia pelo amor, pela fé e pela presença constante do Senhor.
@@ -1282,7 +1282,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
   {
     id: 'step-17',
     order: 17,
-    title: 'Fotos e saída dos padrinhos',
+    title: 'Fotos e Saída dos Padrinhos',
     participants: 'Os noivos ficam no altar. Os padrinhos sobem, casal por casal, para tirar foto — o homem do lado da noiva e a mulher do lado do noivo — depois saem para formar o corredor da saída dos noivos.',
     participantsList: PADRINHOS_ORDEM_ENTRADA,
     songId: 'a-bencao',
@@ -1295,7 +1295,7 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
   {
     id: 'step-18',
     order: 18,
-    title: 'Fotos e saída dos pais',
+    title: 'Fotos e Saída dos Pais',
     participants: 'Tiram foto com os noivos e vão para o final do corredor',
     participantsList: [PAIS_NOIVO.join(' e '), PAIS_NOIVA.join(' e ')],
     songId: 'a-bencao',
@@ -1304,8 +1304,8 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
   {
     id: 'step-19',
     order: 19,
-    title: 'Saída dos noivos',
-    participants: `${NOIVOS.noivo} & ${NOIVOS.noiva} — saem pelo corredor e dão um beijo do meio para o final`,
+    title: 'Saída dos Noivos',
+    participants: `${NOIVOS.noivo} & ${NOIVOS.noiva} — saem pelo corredor e, na metade do caminho, dão um beijo, seguindo até o final`,
     songId: 'a-bencao',
     isSaida: true,
     extra: ['Depois da saída dos noivos, todos seguem para o salão.'],
@@ -1313,14 +1313,14 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
   {
     id: 'step-20',
     order: 20,
-    title: 'Fotos dos noivos (salão)',
+    title: 'Fotos dos Noivos (Salão)',
     participants: `${NOIVOS.noivo} & ${NOIVOS.noiva}`,
     noSong: true,
   },
   {
     id: 'step-21',
     order: 21,
-    title: 'Fotos com os convidados (salão)',
+    title: 'Fotos com os Convidados (Salão)',
     participants: 'Trend: os noivos ficam sentados e os convidados fazem fila para tirar a foto',
     noSong: true,
     extra: [
@@ -1332,27 +1332,27 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
 export const STEP_GROUPS: StepGroup[] = [
   {
     id: 'group-1',
-    title: '1ª parte — Abertura',
-    stepIds: ['step-1', 'step-3', 'step-2'],
+    title: '1ª Parte — Abertura',
+    stepIds: ['step-1', 'step-2', 'step-3'],
   },
   {
     id: 'group-2',
-    title: '2ª parte — Cortejo de entrada',
+    title: '2ª Parte — Cortejo de Entrada',
     stepIds: ['step-8', 'step-9', 'step-5', 'step-4', 'step-6', 'step-7', 'step-11'],
   },
   {
     id: 'group-3',
-    title: '3ª parte — Entrada da noiva e cerimônia',
+    title: '3ª Parte — Entrada da Noiva e Cerimônia',
     stepIds: ['step-10', 'step-12', 'step-13', 'step-14', 'step-15', 'step-16'],
   },
   {
     id: 'group-4',
-    title: '4ª parte — Saída',
+    title: '4ª Parte — Saída',
     stepIds: ['step-17', 'step-18', 'step-19'],
   },
   {
     id: 'group-5',
-    title: '5ª parte — Fotos no salão',
+    title: '5ª Parte — Fotos no Salão',
     stepIds: ['step-20', 'step-21'],
   },
 ];
