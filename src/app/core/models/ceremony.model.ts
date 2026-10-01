@@ -176,7 +176,7 @@ export const AVOS_TIA = ['Pascoal', 'Sonia', 'Maria', 'Cleonice'];
 export const SONGS: Song[] = [
   {
     id: 'oferta-agradavel-a-ti',
-    order: 2,
+    order: 1,
     title: 'Oferta Agradável a Ti',
     artist: 'Cassiane',
     youtubeUrl: 'https://www.youtube.com/watch?v=hXMfqQSx7H0',
@@ -233,7 +233,7 @@ Tua glória em meu rosto brilhar`,
   },
   {
     id: 'ale-a-gloria',
-    order: 1,
+    order: 2,
     title: 'A Ele a Glória',
     videoTitle: 'ROCHA - A ELE A GLÓRIA (CLIPE OFICIAL)',
     artist: 'Gabriela Rocha',
@@ -350,7 +350,7 @@ Pra sempre, amém`,
   },
   {
     id: 'deus-de-promessas',
-    order: 5,
+    order: 6,
     title: 'Deus de Promessas',
     artist: 'Davi Sacer',
     youtubeUrl: 'https://www.youtube.com/watch?v=iwe-a-T8KYI',
@@ -444,7 +444,7 @@ Mas Tua Palavra vai se cumprir`,
   },
   {
     id: 'quao-lindo-esse-nome-e',
-    order: 6,
+    order: 7,
     title: 'Quão Lindo Esse Nome É',
     artist: 'Ana Nóbrega',
     youtubeUrl: 'https://www.youtube.com/watch?v=fQZjavJe_uo',
@@ -542,7 +542,7 @@ O nome de Jesus`,
   },
   {
     id: 'eu-te-agradeco',
-    order: 7,
+    order: 3,
     title: 'Eu Te Agradeço',
     artist: 'Preto No Branco (part. Israel Salazar)',
     videoTitle: 'Preto no Branco, Weslei Santos - Eu Te Agradeço (Ao Vivo) ft. Israel Salazar',
@@ -566,7 +566,7 @@ E me fez viver`,
   },
   {
     id: 'deus-e-deus',
-    order: 3,
+    order: 5,
     title: 'Deus é Deus',
     artist: 'Delino Marçal',
     youtubeUrl: 'https://www.youtube.com/watch?v=JPqitveFAGo',
@@ -1007,24 +1007,8 @@ As famílias Flauzino e Castanheira Faria, com alegria e gratidão, damos as boa
     ],
   },
   {
-    id: 'step-2',
-    order: 2,
-    title: 'Entrada dos pastores',
-    participants: 'Entram em três momentos:',
-    participantsList: ['1º — Pr. Ademir & Sandra', '2º — Etevildo da Silveira & Maria Lucia', '3º — Samuel Gonçalves & Márcia da Silveira'],
-    songId: 'ale-a-gloria',
-    speech: [
-      {
-        title: 'Entrada dos pastores',
-        text: `Convidamos, neste momento, aqueles que conduzirão esta cerimônia com sabedoria e unção: os servos de Deus que vêm em nome do Senhor para abençoar esta união.
-
-Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa Sandra, o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
-      },
-    ],
-  },
-  {
     id: 'step-3',
-    order: 3,
+    order: 2,
     title: 'Entrada da Bíblia',
     participants: 'Bíblia levada pela criança — ela deixa a Bíblia no púlpito',
     participantsList: ['Nayla'],
@@ -1039,27 +1023,56 @@ Neste momento, recebemos com muito carinho a criança Nayla, trazendo a Bíblia 
     ],
   },
   {
-    id: 'step-4',
-    order: 4,
-    title: 'Avós e tia',
-    participants: 'Entram em sequência:',
-    participantsList: ['Pascoal & Sônia', 'Maria (avó paterna)', 'Cleonice (tia)'],
-    songId: 'deus-e-deus',
+    id: 'step-2',
+    order: 3,
+    title: 'Entrada dos pastores',
+    participants: 'Entram em três momentos:',
+    participantsList: ['1º — Pr. Ademir & Sandra', '2º — Etevildo da Silveira & Maria Lucia', '3º — Samuel Gonçalves & Márcia da Silveira'],
+    songId: 'ale-a-gloria',
     speech: [
       {
-        title: 'Entrada dos avós e tia',
-        text: `Senhoras e senhores, preparem os seus corações. Damos início a este momento tão esperado acolhendo aqueles que são a base, a raiz e o início de toda essa história. Com seus passos sábios e corações cheios de orgulho, recebemos os avós dos nossos noivos. Eles que nos ensinam o verdadeiro significado de um amor que atravessa gerações. Uma salva de palmas para a entrada dos avós!
+        title: 'Entrada dos pastores',
+        text: `Convidamos, neste momento, aqueles que conduzirão esta cerimônia com sabedoria e unção: os servos de Deus que vêm em nome do Senhor para abençoar esta união.
 
-O amor de família é o alicerce de nossas vidas. Para abençoar este caminho, convidamos a tia Cleonice.`,
+Recebamos com gratidão e reverência o Pastor Ademir e sua digníssima esposa Sandra, o Pastor Etevildo da Silveira e sua digníssima esposa Maria Lucia, e também o Pastor Samuel Gonçalves e sua digníssima esposa Márcia da Silveira, instrumentos escolhidos por Deus para proclamar a Palavra e conduzir este momento de aliança diante do altar.`,
+      },
+    ],
+  },
+  {
+    id: 'step-8',
+    order: 4,
+    title: 'Plaquinha Lá vem o Noivo - Safira',
+    noSong: true,
+  },
+  {
+    id: 'step-9',
+    order: 5,
+    title: 'Noivo — Valtemir Junior',
+    participants: 'Valtemir Junior & Idamar (mãe)',
+    songId: 'eu-te-agradeco',
+    extra: [
+      'Depois de deixar o noivo no altar, Idamar sai da igreja e volta para a porta, para entrar com Valtemir na entrada dos pais do noivo.',
+    ],
+    speech: [
+      {
+        title: 'Fala da entrada do noivo',
+        text: `Que o Senhor seja sempre o alicerce do amor de vocês. Que cada passo da caminhada a dois seja guiado pela fé, pela confiança mútua e pelo propósito de honrar a Deus em cada escolha.
+
+O casamento é uma aliança não apenas entre duas pessoas, mas também com Deus, que abençoa, fortalece e sustenta o amor verdadeiro.
+
+Neste momento vamos receber o noivo:
+
+Valtemir Junior!`,
       },
     ],
   },
   {
     id: 'step-5',
-    order: 5,
+    order: 6,
     title: 'Amigas da noiva',
     participantsList: FLORISTAS_1.nomes,
     songId: 'gratidao',
+    plaquinha: 'Jesus é o Nosso Convidado de Honra',
     speech: [
       {
         title: 'Entrada das amigas da noiva',
@@ -1068,8 +1081,24 @@ O amor de família é o alicerce de nossas vidas. Para abençoar este caminho, c
     ],
   },
   {
+    id: 'step-4',
+    order: 7,
+    title: 'Avós e tia',
+    participants: 'Entram em sequência:',
+    participantsList: ['Pascoal & Sônia', 'Maria (avó paterna)', 'Cleonice (tia)'],
+    songId: 'deus-e-deus',
+    speech: [
+      {
+        title: 'Entrada dos avós e tia',
+        text: `Senhoras e senhores, preparem os seus corações. Seguimos este momento tão especial acolhendo aqueles que são a base, a raiz e o início de toda essa história. Com seus passos sábios e corações cheios de orgulho, recebemos os avós dos nossos noivos. Eles que nos ensinam o verdadeiro significado de um amor que atravessa gerações. Uma salva de palmas para a entrada dos avós!
+
+O amor de família é o alicerce de nossas vidas. Para abençoar este caminho, convidamos a tia Cleonice.`,
+      },
+    ],
+  },
+  {
     id: 'step-6',
-    order: 6,
+    order: 8,
     title: 'Pais do noivo',
     participants: PAIS_NOIVO.join(' e '),
     songId: 'deus-de-promessas',
@@ -1086,7 +1115,7 @@ Com gratidão e honra, recebamos os pais do noivo, que agora caminham até este 
   },
   {
     id: 'step-7',
-    order: 7,
+    order: 9,
     title: 'Padrinhos',
     participants: '12 casais de padrinhos, em ordem alfabética:',
     participantsList: PADRINHOS_ORDEM_ENTRADA,
@@ -1105,50 +1134,25 @@ Sejam bem-vindos a este altar, onde não apenas se firmam alianças humanas, mas
     ],
   },
   {
-    id: 'step-8',
-    order: 8,
-    title: 'Plaquinha Lá vem o Noivo - Safira',
-    noSong: true,
-  },
-  {
-    id: 'step-9',
-    order: 9,
-    title: 'Noivo — Valtemir Junior',
-    participants: 'Valtemir & Idamar',
-    songId: 'eu-te-agradeco',
-    speech: [
-      {
-        title: 'Fala da entrada do noivo',
-        text: `Que o Senhor seja sempre o alicerce do amor de vocês. Que cada passo da caminhada a dois seja guiado pela fé, pela confiança mútua e pelo propósito de honrar a Deus em cada escolha.
-
-O casamento é uma aliança não apenas entre duas pessoas, mas também com Deus, que abençoa, fortalece e sustenta o amor verdadeiro.
-
-Neste momento vamos receber o noivo:
-
-Valtemir Junior!`,
-      },
-    ],
-  },
-  {
-    id: 'step-10',
-    order: 10,
-    title: 'Plaquinha Lá vem a Noiva - Lívia',
-    noSong: true,
-  },
-  {
     id: 'step-11',
-    order: 11,
-    title: 'Florista',
+    order: 10,
+    title: 'Floristas',
     participantsList: FLORISTAS_2.nomes,
     songId: 'santo-espirito',
     speech: [
       {
-        title: 'Entrada da florista',
+        title: 'Entrada das floristas',
         text: `Com um sorriso no rosto e flores nas mãos, vocês anunciam que o amor chegou. Que a vida de vocês seja sempre colorida e cheia de luz como este momento.
 
 Aparecem flores na terra e chegou o tempo de celebrar. Recebam agora a nossa florista, que vem preparando o caminho com delicadeza, espalhando amor e alegria para o momento mais esperado.`,
       },
     ],
+  },
+  {
+    id: 'step-10',
+    order: 11,
+    title: 'Plaquinha Lá vem a Noiva - Lívia',
+    noSong: true,
   },
   {
     id: 'step-12',
@@ -1274,15 +1278,18 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
   {
     id: 'step-17',
     order: 17,
-    title: 'Saída dos avós e tias',
-    participantsList: AVOS_TIA,
+    title: 'Fotos e saída dos padrinhos',
+    participants: 'Padrinhos ficam no altar, de frente para os noivos, tiram foto e saem para formar o corredor da saída dos noivos',
+    participantsList: PADRINHOS_ORDEM_ENTRADA,
     songId: 'a-bencao',
     isSaida: true,
+    extra: ['A Bênção é a música única de toda a saída.'],
   },
   {
     id: 'step-18',
     order: 18,
-    title: 'Saída dos pais dos noivos',
+    title: 'Fotos e saída dos pais',
+    participants: 'Tiram foto com os noivos e vão para o final do corredor',
     participantsList: [PAIS_NOIVO.join(' e '), PAIS_NOIVA.join(' e ')],
     songId: 'a-bencao',
     isSaida: true,
@@ -1290,42 +1297,28 @@ Está encerrada a cerimônia. Que os noivos sigam em amor, sob a graça e a bên
   {
     id: 'step-19',
     order: 19,
-    title: 'Saída dos padrinhos',
-    participantsList: PADRINHOS_ORDEM_ENTRADA,
+    title: 'Saída dos noivos',
+    participants: `${NOIVOS.noivo} & ${NOIVOS.noiva} — saem pelo corredor e dão um beijo do meio para o final`,
     songId: 'a-bencao',
     isSaida: true,
+    extra: ['Depois da saída dos noivos, todos seguem para o salão.'],
   },
   {
     id: 'step-20',
     order: 20,
-    title: 'Saída das amigas da noiva',
-    participantsList: FLORISTAS_1.nomes,
-    songId: 'a-bencao',
-    isSaida: true,
+    title: 'Fotos dos noivos (salão)',
+    participants: `${NOIVOS.noivo} & ${NOIVOS.noiva}`,
+    noSong: true,
   },
   {
     id: 'step-21',
     order: 21,
-    title: 'Saída da florista',
-    participantsList: FLORISTAS_2.nomes,
-    songId: 'a-bencao',
-    isSaida: true,
-  },
-  {
-    id: 'step-22',
-    order: 22,
-    title: 'Saída do porta-aliança',
-    participants: 'Pedro e Emanuele',
-    songId: 'a-bencao',
-    isSaida: true,
-  },
-  {
-    id: 'step-23',
-    order: 23,
-    title: 'Saída dos noivos',
-    participants: `${NOIVOS.noivo} & ${NOIVOS.noiva}`,
-    songId: 'a-bencao',
-    isSaida: true,
+    title: 'Fotos com os convidados (salão)',
+    participants: 'Trend: os noivos ficam sentados e os convidados fazem fila para tirar a foto',
+    noSong: true,
+    extra: [
+      'Duração: o tempo de 2 músicas.',
+    ],
   },
 ];
 
@@ -1333,22 +1326,27 @@ export const STEP_GROUPS: StepGroup[] = [
   {
     id: 'group-1',
     title: '1ª parte — Abertura',
-    stepIds: ['step-1', 'step-2', 'step-3'],
+    stepIds: ['step-1', 'step-3', 'step-2'],
   },
   {
     id: 'group-2',
     title: '2ª parte — Cortejo de entrada',
-    stepIds: ['step-4', 'step-5', 'step-6', 'step-7', 'step-8', 'step-9', 'step-10', 'step-11'],
+    stepIds: ['step-8', 'step-9', 'step-5', 'step-4', 'step-6', 'step-7', 'step-11'],
   },
   {
     id: 'group-3',
     title: '3ª parte — Entrada da noiva e cerimônia',
-    stepIds: ['step-12', 'step-13', 'step-14', 'step-15', 'step-16'],
+    stepIds: ['step-10', 'step-12', 'step-13', 'step-14', 'step-15', 'step-16'],
   },
   {
     id: 'group-4',
     title: '4ª parte — Saída',
-    stepIds: ['step-17', 'step-18', 'step-19', 'step-20', 'step-21', 'step-22', 'step-23'],
+    stepIds: ['step-17', 'step-18', 'step-19'],
+  },
+  {
+    id: 'group-5',
+    title: '5ª parte — Fotos no salão',
+    stepIds: ['step-20', 'step-21'],
   },
 ];
 
