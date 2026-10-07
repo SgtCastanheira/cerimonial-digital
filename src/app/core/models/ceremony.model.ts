@@ -439,7 +439,7 @@ Mas Tua Palavra vai se cumprir`,
     usage: '5 amigas da noiva',
     plannedTime: '0:50–1:10',
     structure: 'Introdução + primeira parte',
-    instrumentation: 'Abner + Carol',
+    instrumentation: 'Abner + Carol + Fabiana',
     editableFields: [],
     lyrics: `Nada novo achei
 Pra dizer, então
@@ -610,7 +610,7 @@ E me fez viver`,
     usage: 'Pascoal e Sonia, depois Maria e Cleonice',
     plannedTime: '1:00–1:20',
     structure: '1ª parte + refrão',
-    instrumentation: 'Abner + Carol',
+    instrumentation: 'Abner + Carol + Fabiana',
     editableFields: [],
     lyrics: `Minha fé não está firmada
 Nas coisas que podes fazer
