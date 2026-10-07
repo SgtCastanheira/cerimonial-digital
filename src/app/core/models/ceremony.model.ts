@@ -441,6 +441,43 @@ Mas Tua Palavra vai se cumprir`,
     structure: 'Introdução + primeira parte',
     instrumentation: 'Abner + Carol',
     editableFields: [],
+    lyrics: `Nada novo achei
+Pra dizer, então
+Como expressar
+Minha gratidão?
+
+Posso até cantar
+Alguma canção
+Que vai acabar
+Mas a Sua não
+
+Então vou levantar as minhas mãos e louvar
+Pois tudo o que tenho é um aleluia, aleluia
+Sei que é simples pra um rei, mas não tenho nada além
+De um coração cantando aleluia, aleluia`,
+    lyricsBySection: [
+      {
+        label: '1ª estrofe',
+        text: `Nada novo achei
+Pra dizer, então
+Como expressar
+Minha gratidão?`,
+      },
+      {
+        label: '2ª estrofe',
+        text: `Posso até cantar
+Alguma canção
+Que vai acabar
+Mas a Sua não`,
+      },
+      {
+        label: 'Refrão',
+        text: `Então vou levantar as minhas mãos e louvar
+Pois tudo o que tenho é um aleluia, aleluia
+Sei que é simples pra um rei, mas não tenho nada além
+De um coração cantando aleluia, aleluia`,
+      },
+    ],
   },
   {
     id: 'quao-lindo-esse-nome-e',
@@ -575,6 +612,55 @@ E me fez viver`,
     structure: '1ª parte + refrão',
     instrumentation: 'Abner + Carol',
     editableFields: [],
+    lyrics: `Minha fé não está firmada
+Nas coisas que podes fazer
+Eu aprendi a te adorar pelo que és
+Dele vem o sim e o amém
+Somente dele e mais ninguém
+A Deus seja o louvor
+
+Se Deus fizer, ele é Deus
+Se não fizer, ele é Deus
+Se a porta abrir, ele é Deus
+Mas se fechar continua sendo Deus
+Se a doença vier, ele é Deus
+Se curado eu for, ele é Deus
+Se tudo der certo, ele é Deus
+Mas se não der continua sendo Deus
+
+Não o adoro pelo que ele faz
+Eu o adoro pelo o que ele é
+Haja o que houver, sempre será Deus
+Não o adoro pelo que ele faz
+Eu o adoro pelo o que ele é
+Haja o que houver, sempre será Deus
+
+Se Deus fizer, ele é Deus
+Se não fizer, ele é Deus
+Se a porta abrir, ele é Deus
+Mas se fechar continua sendo Deus`,
+    lyricsBySection: [
+      {
+        label: '1ª parte',
+        text: `Minha fé não está firmada
+Nas coisas que podes fazer
+Eu aprendi a te adorar pelo que és
+Dele vem o sim e o amém
+Somente dele e mais ninguém
+A Deus seja o louvor`,
+      },
+      {
+        label: 'Refrão',
+        text: `Se Deus fizer, ele é Deus
+Se não fizer, ele é Deus
+Se a porta abrir, ele é Deus
+Mas se fechar continua sendo Deus
+Se a doença vier, ele é Deus
+Se curado eu for, ele é Deus
+Se tudo der certo, ele é Deus
+Mas se não der continua sendo Deus`,
+      },
+    ],
   },
   {
     id: 'santo-espirito',
