@@ -171,7 +171,29 @@ Posso at\xE9 chorar, mas a alegria vem de manh\xE3
 Nunca mudastes, Tu \xE9s fiel`},{label:"Refr\xE3o",text:`Deus de alian\xE7a, Deus de promessas
 Deus que n\xE3o \xE9 homem pra mentir
 Tudo pode passar, tudo pode mudar
-Mas Tua Palavra vai se cumprir`}]},{id:"gratidao",order:4,title:"Gratid\xE3o",artist:"Felipe Rodrigues",videoTitle:"Gratid\xE3o \u2014 Ministra\xE7\xE3o ao vivo",youtubeUrl:"http://youtube.com/watch?v=-oH04gqi0xI",usage:"5 amigas da noiva",plannedTime:"0:50\u20131:10",structure:"Introdu\xE7\xE3o + primeira parte",instrumentation:"Abner + Carol",editableFields:[]},{id:"quao-lindo-esse-nome-e",order:7,title:"Qu\xE3o Lindo Esse Nome \xC9",artist:"Ana N\xF3brega",youtubeUrl:"https://www.youtube.com/watch?v=fQZjavJe_uo",usage:"Entrada dos 12 casais de padrinhos",plannedTime:"3:00\u20133:40",structure:"Introdu\xE7\xE3o + 1\xAA estrofe + refr\xE3o + parte instrumental",instrumentation:"Abner + Carol + Fabiana",editableFields:["tempo individual de cada casal (entrada/chegada)"],lyrics:`No in\xEDcio eras a palavra
+Mas Tua Palavra vai se cumprir`}]},{id:"gratidao",order:4,title:"Gratid\xE3o",artist:"Felipe Rodrigues",videoTitle:"Gratid\xE3o \u2014 Ministra\xE7\xE3o ao vivo",youtubeUrl:"http://youtube.com/watch?v=-oH04gqi0xI",usage:"5 amigas da noiva",plannedTime:"0:50\u20131:10",structure:"Introdu\xE7\xE3o + primeira parte",instrumentation:"Abner + Carol",editableFields:[],lyrics:`Nada novo achei
+Pra dizer, ent\xE3o
+Como expressar
+Minha gratid\xE3o?
+
+Posso at\xE9 cantar
+Alguma can\xE7\xE3o
+Que vai acabar
+Mas a Sua n\xE3o
+
+Ent\xE3o vou levantar as minhas m\xE3os e louvar
+Pois tudo o que tenho \xE9 um aleluia, aleluia
+Sei que \xE9 simples pra um rei, mas n\xE3o tenho nada al\xE9m
+De um cora\xE7\xE3o cantando aleluia, aleluia`,lyricsBySection:[{label:"1\xAA estrofe",text:`Nada novo achei
+Pra dizer, ent\xE3o
+Como expressar
+Minha gratid\xE3o?`},{label:"2\xAA estrofe",text:`Posso at\xE9 cantar
+Alguma can\xE7\xE3o
+Que vai acabar
+Mas a Sua n\xE3o`},{label:"Refr\xE3o",text:`Ent\xE3o vou levantar as minhas m\xE3os e louvar
+Pois tudo o que tenho \xE9 um aleluia, aleluia
+Sei que \xE9 simples pra um rei, mas n\xE3o tenho nada al\xE9m
+De um cora\xE7\xE3o cantando aleluia, aleluia`}]},{id:"quao-lindo-esse-nome-e",order:7,title:"Qu\xE3o Lindo Esse Nome \xC9",artist:"Ana N\xF3brega",youtubeUrl:"https://www.youtube.com/watch?v=fQZjavJe_uo",usage:"Entrada dos 12 casais de padrinhos",plannedTime:"3:00\u20133:40",structure:"Introdu\xE7\xE3o + 1\xAA estrofe + refr\xE3o + parte instrumental",instrumentation:"Abner + Carol + Fabiana",editableFields:["tempo individual de cada casal (entrada/chegada)"],lyrics:`No in\xEDcio eras a palavra
 Um com Deus, o alt\xEDssimo
 O mist\xE9rio de tua gl\xF3ria
 Cristo, em ti se revelou
@@ -256,7 +278,45 @@ Sem eu merecer
 Eu te agrade\xE7o
 Pois sei que um dia me escolheu
 E entregou tudo que era seu
-E me fez viver`},{id:"deus-e-deus",order:5,title:"Deus \xE9 Deus",artist:"Delino Mar\xE7al",youtubeUrl:"https://www.youtube.com/watch?v=JPqitveFAGo",usage:"Pascoal e Sonia, depois Maria e Cleonice",plannedTime:"1:00\u20131:20",structure:"1\xAA parte + refr\xE3o",instrumentation:"Abner + Carol",editableFields:[]},{id:"santo-espirito",order:8,title:"Santo Esp\xEDrito",artist:"Laura Souguellis",youtubeUrl:"https://www.youtube.com/watch?v=J2rTdu7vqTE",usage:"4 floristas",plannedTime:"1:00\u20131:30",structure:"Refr\xE3o + primeira parte",instrumentation:"Abner + Carol + Fabiana",editableFields:[],lyrics:`N\xE3o h\xE1 nada igual
+E me fez viver`},{id:"deus-e-deus",order:5,title:"Deus \xE9 Deus",artist:"Delino Mar\xE7al",youtubeUrl:"https://www.youtube.com/watch?v=JPqitveFAGo",usage:"Pascoal e Sonia, depois Maria e Cleonice",plannedTime:"1:00\u20131:20",structure:"1\xAA parte + refr\xE3o",instrumentation:"Abner + Carol",editableFields:[],lyrics:`Minha f\xE9 n\xE3o est\xE1 firmada
+Nas coisas que podes fazer
+Eu aprendi a te adorar pelo que \xE9s
+Dele vem o sim e o am\xE9m
+Somente dele e mais ningu\xE9m
+A Deus seja o louvor
+
+Se Deus fizer, ele \xE9 Deus
+Se n\xE3o fizer, ele \xE9 Deus
+Se a porta abrir, ele \xE9 Deus
+Mas se fechar continua sendo Deus
+Se a doen\xE7a vier, ele \xE9 Deus
+Se curado eu for, ele \xE9 Deus
+Se tudo der certo, ele \xE9 Deus
+Mas se n\xE3o der continua sendo Deus
+
+N\xE3o o adoro pelo que ele faz
+Eu o adoro pelo o que ele \xE9
+Haja o que houver, sempre ser\xE1 Deus
+N\xE3o o adoro pelo que ele faz
+Eu o adoro pelo o que ele \xE9
+Haja o que houver, sempre ser\xE1 Deus
+
+Se Deus fizer, ele \xE9 Deus
+Se n\xE3o fizer, ele \xE9 Deus
+Se a porta abrir, ele \xE9 Deus
+Mas se fechar continua sendo Deus`,lyricsBySection:[{label:"1\xAA parte",text:`Minha f\xE9 n\xE3o est\xE1 firmada
+Nas coisas que podes fazer
+Eu aprendi a te adorar pelo que \xE9s
+Dele vem o sim e o am\xE9m
+Somente dele e mais ningu\xE9m
+A Deus seja o louvor`},{label:"Refr\xE3o",text:`Se Deus fizer, ele \xE9 Deus
+Se n\xE3o fizer, ele \xE9 Deus
+Se a porta abrir, ele \xE9 Deus
+Mas se fechar continua sendo Deus
+Se a doen\xE7a vier, ele \xE9 Deus
+Se curado eu for, ele \xE9 Deus
+Se tudo der certo, ele \xE9 Deus
+Mas se n\xE3o der continua sendo Deus`}]},{id:"santo-espirito",order:8,title:"Santo Esp\xEDrito",artist:"Laura Souguellis",youtubeUrl:"https://www.youtube.com/watch?v=J2rTdu7vqTE",usage:"4 floristas",plannedTime:"1:00\u20131:30",structure:"Refr\xE3o + primeira parte",instrumentation:"Abner + Carol + Fabiana",editableFields:[],lyrics:`N\xE3o h\xE1 nada igual
 N\xE3o h\xE1 nada melhor
 A que se compara \xE0 esperan\xE7a viva
 Tua presen\xE7a
@@ -632,4 +692,4 @@ Agradecemos a todos os presentes por compartilharem este momento t\xE3o especial
 
 Que o Senhor os aben\xE7oe e os guarde, que fa\xE7a resplandecer o Seu rosto sobre voc\xEAs e lhes conceda paz.
 
-Est\xE1 encerrada a cerim\xF4nia. Que os noivos sigam em amor, sob a gra\xE7a e a b\xEAn\xE7\xE3o do nosso Deus.`}]},{id:"step-17",order:17,title:"Fotos e Sa\xEDda dos Padrinhos",participants:"Os noivos ficam no altar. Os padrinhos sobem, casal por casal, para tirar foto \u2014 o homem do lado da noiva e a mulher do lado do noivo \u2014 depois saem para formar o corredor da sa\xEDda dos noivos.",participantsList:o,songId:"a-bencao",isSaida:!0,extra:["A B\xEAn\xE7\xE3o \xE9 a m\xFAsica \xFAnica de toda a sa\xEDda.","Depois dos padrinhos, entram as amigas da noiva e, em seguida, os familiares, completando o corredor at\xE9 a sa\xEDda dos noivos."]},{id:"step-18",order:18,title:"Fotos e Sa\xEDda dos Pais",participants:"Tiram foto com os noivos e v\xE3o para o final do corredor",participantsList:[r.join(" e "),i.join(" e ")],songId:"a-bencao",isSaida:!0},{id:"step-19",order:19,title:"Sa\xEDda dos Noivos",participants:`${e.noivo} & ${e.noiva} \u2014 saem pelo corredor e, na metade do caminho, d\xE3o um beijo, seguindo at\xE9 o final`,songId:"a-bencao",isSaida:!0,extra:["Depois da sa\xEDda dos noivos, todos seguem para o sal\xE3o."]},{id:"step-20",order:20,title:"Fotos dos Noivos (Sal\xE3o)",participants:`${e.noivo} & ${e.noiva}`,noSong:!0},{id:"step-21",order:21,title:"Fotos com os Convidados (Sal\xE3o)",participants:"Trend: os noivos ficam sentados e os convidados fazem fila para tirar a foto",noSong:!0,extra:["Dura\xE7\xE3o: o tempo de 2 m\xFAsicas."]}],h=[{id:"group-1",title:"1\xAA Parte \u2014 Abertura",stepIds:["step-1","step-2","step-3"]},{id:"group-2",title:"2\xAA Parte \u2014 Cortejo de Entrada",stepIds:["step-8","step-9","step-5","step-4","step-6","step-7","step-11"]},{id:"group-3",title:"3\xAA Parte \u2014 Entrada da Noiva e Cerim\xF4nia",stepIds:["step-10","step-12","step-13","step-14","step-15","step-16"]},{id:"group-4",title:"4\xAA Parte \u2014 Sa\xEDda",stepIds:["step-17","step-18","step-19"]},{id:"group-5",title:"5\xAA Parte \u2014 Fotos no Sal\xE3o",stepIds:["step-20","step-21"]}],g="19min50s a 26min40s";export{d as a,u as b,l as c,m as d,c as e,p as f,h as g,g as h};
+Est\xE1 encerrada a cerim\xF4nia. Que os noivos sigam em amor, sob a gra\xE7a e a b\xEAn\xE7\xE3o do nosso Deus.`}]},{id:"step-17",order:17,title:"Fotos e Sa\xEDda dos Padrinhos",participants:"Os noivos ficam no altar. Os padrinhos sobem, casal por casal, para tirar foto \u2014 o homem do lado da noiva e a mulher do lado do noivo \u2014 depois saem para formar o corredor da sa\xEDda dos noivos.",participantsList:o,songId:"a-bencao",isSaida:!0,extra:["A B\xEAn\xE7\xE3o \xE9 a m\xFAsica \xFAnica de toda a sa\xEDda.","Depois dos padrinhos, entram as amigas da noiva e, em seguida, os familiares, completando o corredor at\xE9 a sa\xEDda dos noivos."]},{id:"step-18",order:18,title:"Fotos e Sa\xEDda dos Pais",participants:"Tiram foto com os noivos e v\xE3o para o final do corredor",participantsList:[r.join(" e "),i.join(" e ")],songId:"a-bencao",isSaida:!0},{id:"step-19",order:19,title:"Sa\xEDda dos Noivos",participants:`${e.noivo} & ${e.noiva} \u2014 saem pelo corredor e, na metade do caminho, d\xE3o um beijo, seguindo at\xE9 o final`,songId:"a-bencao",isSaida:!0,extra:["Depois da sa\xEDda dos noivos, todos seguem para o sal\xE3o."]},{id:"step-20",order:20,title:"Fotos dos Noivos (Sal\xE3o)",participants:`${e.noivo} & ${e.noiva}`,noSong:!0},{id:"step-21",order:21,title:"Fotos com os Convidados (Sal\xE3o)",participants:"Trend: os noivos ficam sentados e os convidados fazem fila para tirar a foto",noSong:!0,extra:["Dura\xE7\xE3o: o tempo de 2 m\xFAsicas."]}],h=[{id:"group-1",title:"1\xAA Parte \u2014 Abertura",stepIds:["step-1","step-2","step-3"]},{id:"group-2",title:"2\xAA Parte \u2014 Cortejo de Entrada",stepIds:["step-8","step-9","step-5","step-4","step-6","step-7","step-11"]},{id:"group-3",title:"3\xAA Parte \u2014 Entrada da Noiva e Cerim\xF4nia",stepIds:["step-10","step-12","step-13","step-14","step-15","step-16"]},{id:"group-4",title:"4\xAA Parte \u2014 Sa\xEDda",stepIds:["step-17","step-18","step-19"]},{id:"group-5",title:"5\xAA Parte \u2014 Fotos no Sal\xE3o",stepIds:["step-20","step-21"]}],v="19min50s a 26min40s";export{d as a,u as b,l as c,m as d,c as e,p as f,h as g,v as h};
