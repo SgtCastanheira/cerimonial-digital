@@ -171,7 +171,7 @@ Posso at\xE9 chorar, mas a alegria vem de manh\xE3
 Nunca mudastes, Tu \xE9s fiel`},{label:"Refr\xE3o",text:`Deus de alian\xE7a, Deus de promessas
 Deus que n\xE3o \xE9 homem pra mentir
 Tudo pode passar, tudo pode mudar
-Mas Tua Palavra vai se cumprir`}]},{id:"gratidao",order:4,title:"Gratid\xE3o",artist:"Felipe Rodrigues",videoTitle:"Gratid\xE3o \u2014 Ministra\xE7\xE3o ao vivo",youtubeUrl:"http://youtube.com/watch?v=-oH04gqi0xI",usage:"5 amigas da noiva",plannedTime:"0:50\u20131:10",structure:"Introdu\xE7\xE3o + primeira parte",instrumentation:"Abner + Carol",editableFields:[],lyrics:`Nada novo achei
+Mas Tua Palavra vai se cumprir`}]},{id:"gratidao",order:4,title:"Gratid\xE3o",artist:"Felipe Rodrigues",videoTitle:"Gratid\xE3o \u2014 Ministra\xE7\xE3o ao vivo",youtubeUrl:"http://youtube.com/watch?v=-oH04gqi0xI",usage:"5 amigas da noiva",plannedTime:"0:50\u20131:10",structure:"Introdu\xE7\xE3o + primeira parte",instrumentation:"Abner + Carol + Fabiana",editableFields:[],lyrics:`Nada novo achei
 Pra dizer, ent\xE3o
 Como expressar
 Minha gratid\xE3o?
@@ -278,7 +278,7 @@ Sem eu merecer
 Eu te agrade\xE7o
 Pois sei que um dia me escolheu
 E entregou tudo que era seu
-E me fez viver`},{id:"deus-e-deus",order:5,title:"Deus \xE9 Deus",artist:"Delino Mar\xE7al",youtubeUrl:"https://www.youtube.com/watch?v=JPqitveFAGo",usage:"Pascoal e Sonia, depois Maria e Cleonice",plannedTime:"1:00\u20131:20",structure:"1\xAA parte + refr\xE3o",instrumentation:"Abner + Carol",editableFields:[],lyrics:`Minha f\xE9 n\xE3o est\xE1 firmada
+E me fez viver`},{id:"deus-e-deus",order:5,title:"Deus \xE9 Deus",artist:"Delino Mar\xE7al",youtubeUrl:"https://www.youtube.com/watch?v=JPqitveFAGo",usage:"Pascoal e Sonia, depois Maria e Cleonice",plannedTime:"1:00\u20131:20",structure:"1\xAA parte + refr\xE3o",instrumentation:"Abner + Carol + Fabiana",editableFields:[],lyrics:`Minha f\xE9 n\xE3o est\xE1 firmada
 Nas coisas que podes fazer
 Eu aprendi a te adorar pelo que \xE9s
 Dele vem o sim e o am\xE9m
